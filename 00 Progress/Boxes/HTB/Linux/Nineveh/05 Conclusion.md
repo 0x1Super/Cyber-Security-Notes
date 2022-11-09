@@ -1,0 +1,2 @@
+- weak admin passwords
+- #LFI vul 

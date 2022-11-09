@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "1e978880aadf6e62",
+    "type": "split",
+    "children": [
+      {
+        "id": "f19e4899590347cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0aadb4edf870e224",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Progress/Boxes/HTB/Linux/BackDoor/00 Enum.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "35f75ba2194a0ad6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "2ef6779f39bc9f28",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2e9748bc763ca090",
+    "type": "split",
+    "children": [
+      {
+        "id": "c73f24cb85344faa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d713afe9e1ebeb45",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6f3fcbe2b8534203",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "owasp",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d7eeccc8bbe1404c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1d9f05574aafd390",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5644f3dab367006",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d124acee5e098087",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "00 Progress/Boxes/HTB/Linux/BackDoor/00 Enum.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4f9e44e4930dd3d2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "00 Progress/Boxes/HTB/Linux/BackDoor/00 Enum.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "703b9f962a7d8ad9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0a8fb1ee6aacfb8d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "00 Progress/Boxes/HTB/Linux/BackDoor/00 Enum.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d713afe9e1ebeb45",
+  "lastOpenFiles": [
+    "PNPT/WEB/Web Enum.md",
+    "04 Studies/Network/Firewalls/WAF.md",
+    "04 Studies/OWASP TOP 10.md",
+    "00 Progress/Boxes/HTB/Old/Bounty Hunter.md",
+    "00 Progress/Boxes/THM/Internal/05 Conclusion.md",
+    "00 Progress/Boxes/THM/Internal/03 Privesc.md",
+    "00 Progress/Boxes/Black Pearl/Ports.md",
+    "01 Enumeration/Web/WordPress.md",
+    "01 Enumeration/Web/Sql-maps.md",
+    "01 Enumeration/Web/Gobuster.md"
+  ]
+}

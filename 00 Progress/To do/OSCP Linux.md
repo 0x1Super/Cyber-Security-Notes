@@ -1,0 +1,43 @@
+Tags:OSCP Linux 
+When: [[OSCP Linux]]
+
+#todo Do List
+- [ ]  Hack the box (tartarsauce)
+- [ ]  Hack the box (jarvis)
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/popcorn/01 Exploit]]
+- [ ]  Hack the box (haircut)
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Nineveh/01 Exploit]]
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Beep/01 Exploit]]
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Lame/00 Enum]]
+- [ ]  Hack the box (Networked)
+- [ ]  Hack the box (Safe)
+- [ ]  Hack the box ([[00 Progress/Boxes/HTB/Linux/Writeup/00 Enum]])
+- [ ]  Hack the box (Swagshop)
+- [ ]  Hack the box (Help)
+- [x]  Hack the box ([[00 Progress/Boxes/HTB/Linux/irked/03 Privesc]])
+- [ ]  Hack the box [[00 Progress/Boxes/HTB/Linux/Postman/00 Enum]]
+- [ ]  Hack the box (Teacher)
+- [ ]  Hack the box (Curling)
+- [ ]  Hack the box (Frolic)
+- [ ]  Hack the box (Sunday)
+- [ ]  Hack the box [[00 Progress/Boxes/HTB/Linux/Valentine/00 Enum]]
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/nibbles/03 Privesc]]
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Bashed/03 Privesc]]
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Sense/01 Exploit]]
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Shocker/03 Privesc]]
+- [ ]  Hack the box (Mirai)
+- [ ]  Hack the box (Blocky)
+- [ ]  Hack the box (Bank)
+- [ ]  Hack the box (Poison)
+- [ ]  Hack the box (BrainFuck*)
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/CronOS/01 Exploit]]
+- [ ]  Hack the box (Solid State)
+- [ ]  Hack the box (Tenten)
+- [ ]  Hack the box (Shrek)
+- [ ]  Hack the box (Friendzone)
+- [ ]  Hack the box (SecNotes)
+- [ ]  Hack the box (node)
+- [ ]  Hack the box (Mango)
+- [ ]   Hack the box (Safe) 
+- [x]    Hack the box [[00 Progress/Boxes/HTB/Linux/Open Admin/00 Enum]]
+- [ ]  Hack the box [[mrRobot.pdf]]

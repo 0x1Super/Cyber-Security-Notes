@@ -1,0 +1,4 @@
+- using vul version of unreal lead to reverse shell
+- weird user password in pic
+- weird software that lead to privesc 
+- 

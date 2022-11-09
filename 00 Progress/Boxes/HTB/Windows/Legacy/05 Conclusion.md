@@ -1,0 +1,1 @@
+- a old windows version vul to #eternalblue 
