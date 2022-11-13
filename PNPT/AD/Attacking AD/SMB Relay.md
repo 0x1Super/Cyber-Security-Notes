@@ -1,5 +1,5 @@
 # SMB Relay 
-instead of cracking the target hashes we captured with responder we can instead relay the hashes to specific machines and potentially gain acces
+instead of cracking the target hashes we captured with responder we can instead relay the hashes to specific machines and potentially gain access
 ## Requirements 
 - SMB signing disabled on the target
 - Relayed user creds must be admin on the machine

@@ -1,6 +1,6 @@
 
 # Privesc
-find . -perm /4000 ## to find all SUID files
+find  / -perm /4000 2>/dev/null ## to find all SUID files
 find / -perm -u=s -type f 2>/dev/null
 
 
@@ -59,3 +59,6 @@ ss -lntp
 
 # remove softwares
 sudo apt-get --purge x
+
+# run command as another user
+sudo -u USER COMMAND

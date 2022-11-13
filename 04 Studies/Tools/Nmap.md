@@ -158,8 +158,7 @@ nmap -p 80 --script http-put --script-args http-put.url='/dav/shell.php',http-pu
 
 to look for help for specific script we do nmap --script-help <script-name>
 
-	
-	
+
 
  
  

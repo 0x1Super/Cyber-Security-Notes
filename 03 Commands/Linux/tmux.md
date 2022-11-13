@@ -23,6 +23,16 @@ run-shell /opt/tmux-logging/logging.tmux
 bind c new-window -c "#{pane_current_path}"
 bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
+
+# don't rename windows automatically
+
+set-option -g allow-rename off
+
+# CHANGE split panes using | and -
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
 ```
 -------------------------------------------------------
 - `usage`

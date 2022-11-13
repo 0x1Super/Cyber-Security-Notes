@@ -4,39 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "f19e4899590347cc",
+        "id": "135e045272013d2f",
         "type": "tabs",
         "children": [
           {
-            "id": "0aadb4edf870e224",
+            "id": "e7ddee84456f6471",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/BackDoor/00 Enum.md",
+                "file": "04 Studies/OWASP TOP 10.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "35f75ba2194a0ad6",
+            "id": "3fab131a2dd72ae6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
-            "id": "2ef6779f39bc9f28",
+            "id": "8a253b35fa4176d3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "01 Enumeration/Mail/pop.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -65,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "owasp",
+                "query": "sqli",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -102,11 +110,11 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/BackDoor/00 Enum.md",
+                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -119,9 +127,21 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/BackDoor/00 Enum.md",
+                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3d67e9af631c1df1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Progress/To do/Daily.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -131,8 +151,32 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f0166f5888f6d3e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 Enumeration/Check list.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "721d80bb9ecde076",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Progress/To do/Daily.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -142,28 +186,28 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/BackDoor/00 Enum.md"
+                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
-  "active": "d713afe9e1ebeb45",
+  "active": "3fab131a2dd72ae6",
   "lastOpenFiles": [
-    "PNPT/WEB/Web Enum.md",
-    "04 Studies/Network/Firewalls/WAF.md",
+    "00 Progress/Boxes/HTB/Linux/Shared/05 Conclusion.md",
+    "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
+    "00 Progress/Boxes/HTB/Linux/Shared/04 Creds.md",
+    "00 Progress/Boxes/HTB/Linux/Shared/01 Exploit.md",
+    "PNPT/WEB/OWASP/SQLI.md",
+    "02 Exploitation/SQL-Injection (SQLi).md",
+    "01 Enumeration/Mail/SMTP.md",
     "04 Studies/OWASP TOP 10.md",
-    "00 Progress/Boxes/HTB/Old/Bounty Hunter.md",
-    "00 Progress/Boxes/THM/Internal/05 Conclusion.md",
-    "00 Progress/Boxes/THM/Internal/03 Privesc.md",
-    "00 Progress/Boxes/Black Pearl/Ports.md",
-    "01 Enumeration/Web/WordPress.md",
-    "01 Enumeration/Web/Sql-maps.md",
-    "01 Enumeration/Web/Gobuster.md"
+    "00 Progress/Boxes/HTB/Linux/Beep/01 Exploit.md",
+    "00 Progress/Boxes/HTB/Linux/Beep/00 Enum.md"
   ]
 }

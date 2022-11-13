@@ -11,5 +11,17 @@ in go
 gobuster scan we found /dev and it lead us to a directory which has phpbashed terminal and we got 
 
 using a python reverse shell to get our stable shell rather than the web shell [[Python]]
+## Second method
+
+uploading php reverse shell to the server and access it through /uploads
+![[Pasted image 20221111144925.png]]
+
+then we can try to access the reverse shell through the website URL 
+first we set up a listener 
+![[Pasted image 20221111145121.png]]
+
+and we got a shell
+
+
 #userflag 2c281f318555dbc1b856957c7147bfc1
 
