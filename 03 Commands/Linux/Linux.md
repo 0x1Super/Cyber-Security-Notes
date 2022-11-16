@@ -22,9 +22,11 @@ ALT + . paste last argument
  CTRL + r to search in history 
 
 # replace words 
+```
 *remove all '* sed -i -e 's/\r$//' FILE_NAME
 cat file1 file2... | { tr -d '\n'; echo; } > output.txt
 *Replace all newlines * tr -s '\n' ',' < test
+```
 
 # ping all alive users
 fping -gaq IP/RANGE

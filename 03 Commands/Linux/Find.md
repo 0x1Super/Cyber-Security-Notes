@@ -2,6 +2,7 @@
 -name 
 -user 
 -nouser
+-group
 # type
 -type f(FILE) / d (Directory) / l (symlink)
 # size 

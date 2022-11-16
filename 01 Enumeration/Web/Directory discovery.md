@@ -43,7 +43,9 @@ for file in $(ls /usr/share/seclists/Discovery/Web-Content); do gobuster -u http
 ```
 wfuzz -c -z file,/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --sc 200 http://$ip/FUZZ
 ```
-
+```
+wfuzz -c -f subdomains.txt -w /usr/share/wordlists/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -u "http://shoppy.htb/" -H "Host: FUZZ.shoppy.htb" --hl 7
+```
 # Erodir by PinkP4nther
 
 ```

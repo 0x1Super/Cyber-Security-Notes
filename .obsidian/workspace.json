@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 Studies/OWASP TOP 10.md",
+                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "681c03398300dbea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 Commands/Linux/Chisel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1cecec126771c10f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
+                "file": "03 Commands/Linux/Find.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +61,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 Enumeration/Mail/pop.md",
+                "file": "04 Studies/Tools/Curl.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a2bd0670a323095",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 Commands/Linux/grep.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -73,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sqli",
+                "query": "chisel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -90,7 +126,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
+                "file": "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
+                "file": "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +223,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md"
+                "file": "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md"
               }
             }
           }
@@ -197,17 +234,17 @@
     "direction": "horizontal",
     "width": 200
   },
-  "active": "3fab131a2dd72ae6",
+  "active": "1cecec126771c10f",
   "lastOpenFiles": [
-    "00 Progress/Boxes/HTB/Linux/Shared/05 Conclusion.md",
-    "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
-    "00 Progress/Boxes/HTB/Linux/Shared/04 Creds.md",
-    "00 Progress/Boxes/HTB/Linux/Shared/01 Exploit.md",
-    "PNPT/WEB/OWASP/SQLI.md",
-    "02 Exploitation/SQL-Injection (SQLi).md",
-    "01 Enumeration/Mail/SMTP.md",
-    "04 Studies/OWASP TOP 10.md",
-    "00 Progress/Boxes/HTB/Linux/Beep/01 Exploit.md",
-    "00 Progress/Boxes/HTB/Linux/Beep/00 Enum.md"
+    "03 Commands/Linux/Chisel.md",
+    "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
+    "eJPT/2.8 Network.md",
+    "00 Progress/Boxes/THM/Wonderland/03 Privesc.md",
+    "00 Progress/Boxes/HTB/Linux/irked/03 Privesc.md",
+    "00 Progress/Boxes/HTB/Linux/Horizontall/03 Privesc.md",
+    "03 Commands/Linux/Linux.md",
+    "02 Exploitation/privesc tools/Linux.md",
+    "03 Commands/Linux/Find.md",
+    "PNPT/WEB/OWASP/SQLI.md"
   ]
 }
