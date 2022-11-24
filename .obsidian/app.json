@@ -4,9 +4,9 @@
   "attachmentFolderPath": "./Screen_shots",
   "pdfExportSettings": {
     "includeName": false,
-    "pageSize": "A3",
+    "pageSize": "A4",
     "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
+    "margin": "2",
+    "downscalePercent": 79
   }
 }

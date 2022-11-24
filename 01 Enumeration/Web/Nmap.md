@@ -15,8 +15,6 @@ nmap -sC -sV -O -p- -oA nmap/full 10.10.10.3
 
 ## Full scan UDP
 
-
-
 nmap -sU -O -p- -oA nmap/udp 10.10.10.3
 
 ## Sparta
@@ -29,11 +27,13 @@ nmap -A $ip
 
 ## Scan for alive hosts
 
+```bash
 nmap -sn $ip/24
 
 nmap -vvv -sn $ip/24
 
 nmap -sn -n $ip/24 > ip-range.txt
+```
 
 ## Scan specific IP range
 
@@ -56,7 +56,7 @@ grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' ip-range.txt > 
 
 Scan 100 most common ports
 
-nmap -F $ip
+nmap -F $ip --top-ports 10
 
 ## Quick TCP Scan
 
@@ -125,6 +125,13 @@ Create a text file contains of our targets machine (like in method Scan for unus
 Run this nmap command with `-iL`
 
 nmap -iL list-of-ips.txt
+
+## search for NSE script
+
+```bash
+locate -r nse$|grep ldap
+
+```
 
 ## Onetwopunch.sh
 

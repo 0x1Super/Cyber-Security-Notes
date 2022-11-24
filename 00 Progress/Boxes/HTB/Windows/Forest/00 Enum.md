@@ -31,6 +31,7 @@ server
 10.129.95.210
 and nothing
 # ldap enum
+
 ldapsearch -h 10.129.95.210 -x -s base namingcontexts
 ![[Pasted image 20211008164648.png]]
 ldapsearch -h 10.129.95.210 -x -b "DC=htb,DC=local" > ldap.out to dump info from ldap server then we can try to query using 

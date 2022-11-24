@@ -1,3 +1,38 @@
+# Check for Pwnkit
+
+```
+dpkg -s policykit-1
+```
+
+
+# Find type of encryption for /etc/shadow
+
+```bash
+grep -A 18 ENCRYPT_METHOD /etc/login.defs
+```
+
+# Open pictures from terminal 
+```
+eog
+```
+# Check listening ports
+
+```
+sudo lsof -i -P -n | grep LISTEN  
+$ sudo netstat -tulpn | grep LISTEN  
+$ sudo ss -tulpn | grep LISTEN  
+$ sudo lsof -i:22 ## see a specific port such as 22 ##  
+$ sudo nmap -sTU -O IP-address-Here
+```
+### Viewing the Internet network services list
+less /etc/services
+
+# add host fo /etc/hosts
+echo "10.129.227.248 thetoppers.htb" | sudo tee -a /etc/hosts
+
+# perm
+  421
+  rwx
 
 # Privesc
 find  / -perm /4000 2>/dev/null ## to find all SUID files
@@ -64,3 +99,8 @@ sudo apt-get --purge x
 
 # run command as another user
 sudo -u USER COMMAND
+
+# RDP to windows
+```
+rdesktop IP_ADDR # rdp remote desktop to windows
+```

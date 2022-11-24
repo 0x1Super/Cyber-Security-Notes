@@ -1,10 +1,10 @@
    _____Port Scanner/VulScanner______
 
-**Nmap**
+# Nmap
 
 ![[Pasted image 20211127143856.png]]
 nmap [OPTION] [TARGET] [PORT\S] 
-# Scan types
+## Scan types
 When port scanning with Nmap, there are three basic scan types. These are:
 
 - TCP Connect Scans " Full connect " (-sT)

@@ -4,83 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "135e045272013d2f",
+        "id": "471e580de5f7f937",
         "type": "tabs",
         "children": [
           {
-            "id": "e7ddee84456f6471",
+            "id": "2fff0dc22f9678c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Shared/Shared.md",
+                "file": "03 Commands/Linux/Linux.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "681c03398300dbea",
+            "id": "40bc5c40b283e12f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Commands/Linux/Chisel.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1cecec126771c10f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3fab131a2dd72ae6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 Commands/Linux/Find.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8a253b35fa4176d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "04 Studies/Tools/Curl.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4a2bd0670a323095",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "03 Commands/Linux/grep.md",
+                "file": "02 Exploitation/hp jetdirect.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "chisel",
+                "query": "upgrade",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -126,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
+                "file": "03 Commands/Linux/Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
+                "file": "03 Commands/Linux/Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md"
+                "file": "03 Commands/Linux/Linux.md"
               }
             }
           }
@@ -232,19 +182,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
-  "active": "1cecec126771c10f",
+  "active": "2fff0dc22f9678c4",
   "lastOpenFiles": [
-    "03 Commands/Linux/Chisel.md",
-    "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
-    "eJPT/2.8 Network.md",
-    "00 Progress/Boxes/THM/Wonderland/03 Privesc.md",
-    "00 Progress/Boxes/HTB/Linux/irked/03 Privesc.md",
-    "00 Progress/Boxes/HTB/Linux/Horizontall/03 Privesc.md",
-    "03 Commands/Linux/Linux.md",
-    "02 Exploitation/privesc tools/Linux.md",
-    "03 Commands/Linux/Find.md",
-    "PNPT/WEB/OWASP/SQLI.md"
+    "02 Exploitation/Upgrading Shell.md",
+    "01 Enumeration/Web/SNMP.md",
+    "02 Exploitation/hp jetdirect.md",
+    "01 Enumeration/Web/Nmap.md",
+    "02 Exploitation/BruteForce/Passwords/Hydra.md",
+    "eJPT/Lab 3.md",
+    "eJPT/Lab 2 eJPT.md",
+    "02 Exploitation/Metasploit.md",
+    "00 Progress/Boxes/THM/Wreath/Untitled.md",
+    "00 Progress/Boxes/HTB/Linux/updown/updown.md"
   ]
 }

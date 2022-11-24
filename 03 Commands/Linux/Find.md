@@ -1,3 +1,10 @@
+
+# Check for open ports
+
+```
+netstat -tulpn | grep LISTEN
+```
+
 # owners 
 -name 
 -user 

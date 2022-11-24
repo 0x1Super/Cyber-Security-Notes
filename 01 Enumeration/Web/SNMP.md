@@ -34,7 +34,17 @@ for community in public private manager; do snmpwalk -c $community -v1 $ip; done
 snmpwalk -c public -v1 $ip
 
 snmpenum $ip public windows.txt
+
+snmpwalk -v 2c -c public 10.10.11.107
+
 ```
+
+## snmpget
+
+```bash
+snmpget -v 1 -c public 192.168.2.46 .1.3.6.1.4.1.11.2.3.9.1.1.13.0 #Getting a JetDirect password
+```
+
 
 Less noisy
 

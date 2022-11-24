@@ -2,6 +2,7 @@
 # Gobuster 
 
 
+ 
 ```
 gobuster dir -u 10.10.10.181 -w /usr/share/seclists/Discovery/Web-Content/common.txt
 ```
@@ -36,6 +37,15 @@ gobuster -u $ip -w /usr/share/seclists/Discovery/Web_Content/common.txt -t 80 -a
 ## if stuck
 ```
 for file in $(ls /usr/share/seclists/Discovery/Web-Content); do gobuster -u http://$ip/ -w /usr/share/seclists/Discovery/Web-Content/$file -e -k -l -s "200,204,301,302,307" -t 20 ; done
+```
+ **FIX STATUS CODE ERROR**
+ ```
+ -b "STATUS_CODE"
+```
+
+## vhost
+```
+gobuster vhost -w /opt/useful/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -u http://thetoppers.htb --append-domain
 ```
 
 # Wfuzz
