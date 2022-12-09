@@ -1,0 +1,1 @@
+Look for /assets/js/app/app.js for directory enum

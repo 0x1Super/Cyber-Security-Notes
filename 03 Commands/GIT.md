@@ -1,3 +1,8 @@
+# Tools
+```bash
+GitKraken
+```
+
 
 # Check for commits logs
 
@@ -17,6 +22,8 @@ git commit -m "Bug Fix" --author "SOMEONE  <EMAIL@ADDRESS.com>" # adds a new com
 
 git push # push latest commit 
 
+
+git ls-files # show information about the files in the index
 
 ```
 

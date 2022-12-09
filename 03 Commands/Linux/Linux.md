@@ -1,3 +1,79 @@
+# Live checking a file
+
+```bash
+tail -f FILE
+```
+
+# Check if someone is pinging me
+
+
+```bash
+
+sudo tcpdump -i tun0 icmp
+
+```
+# download directories recursive from web
+
+```bash
+wget --no-parent -r http://WEBSITE.com/
+```
+
+# watch 
+
+```bash 
+# Redo command every TIME
+watch -n 1 'systemctl list-timers'
+```
+
+
+# Enumurate websites
+```bash
+droopescan
+
+```
+
+
+# Decrypt ssh key
+
+```bash
+openssl rsa -in hype_key_encrypted -out hype_key_decrypted
+```
+
+# Hex to text
+```bash
+xxd -r -p
+```
+
+# Check for file md5sum
+
+```bash
+md5sum FILE 
+```
+
+
+# Recover deleted files from mount files
+
+```bash
+strings MOUNT_FILE_DIRECTORY
+
+xxd MOUNT_FILE | grep -v "000000 etc."
+# also can grep 
+
+grep -B2 -A2 -a '[a-z0-0]\{32\}' PATH # find flag 
+https://www.youtube.com/watch?v=SRmvRGUuuno&ab_channel=IppSec
+
+```
+
+
+
+
+# Check mounts
+
+```bash
+df -lh
+mount
+```
+
 # Check for Pwnkit
 
 ```
@@ -19,10 +95,10 @@ eog
 
 ```
 sudo lsof -i -P -n | grep LISTEN  
-$ sudo netstat -tulpn | grep LISTEN  
-$ sudo ss -tulpn | grep LISTEN  
-$ sudo lsof -i:22 ## see a specific port such as 22 ##  
-$ sudo nmap -sTU -O IP-address-Here
+netstat -an | grep LISTEN  
+ss -tulpn | grep LISTEN  
+lsof -i:22 ## see a specific port such as 22 ##  
+nmap -sTU -O IP-address-Here
 ```
 ### Viewing the Internet network services list
 less /etc/services
@@ -63,9 +139,19 @@ cat file1 file2... | { tr -d '\n'; echo; } > output.txt
 *Replace all newlines * tr -s '\n' ',' < test
 ```
 
-# ping all alive users
+# Host discovery 
+```bash
 fping -gaq IP/RANGE
+
+
 sudo netdiscover -r 192.168.1.0/24
+
+nmap -sn 0.0.0.0/24
+
+sudo arp-scan -I tap0 -g 0.0.0.0/24
+
+zenmap  # GUI
+```
 
 # ROT13 
 echo 'fooman@example.com' | tr 'A-Za-z' 'N-ZA-Mn-za-m'
@@ -103,4 +189,14 @@ sudo -u USER COMMAND
 # RDP to windows
 ```
 rdesktop IP_ADDR # rdp remote desktop to windows
+```
+
+
+# Render websites command line
+
+```bash
+browsh --startup-url IP
+
+lynx IP
+
 ```

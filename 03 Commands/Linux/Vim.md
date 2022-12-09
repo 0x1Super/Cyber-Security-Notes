@@ -21,3 +21,10 @@ CTRL R redo
    P to past before cursor 
    p to past after 
    :set number # to number the page 
+```bash
+# First line of the page
+gg 
+:1
+1G
+1gg
+```

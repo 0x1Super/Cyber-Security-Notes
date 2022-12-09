@@ -18,26 +18,25 @@ When: [[OSCP Linux]]
 - [ ]  Hack the box [[00 Progress/Boxes/HTB/Linux/Postman/00 Enum]]
 - [ ]  Hack the box (Teacher)
 - [ ]  Hack the box (Curling)
-- [ ]  Hack the box (Frolic)
 - [ ]  Hack the box (Sunday)
 - [ ]  Hack the box [[00 Progress/Boxes/HTB/Linux/Valentine/00 Enum]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/nibbles/03 Privesc]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Bashed/03 Privesc]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Sense/01 Exploit]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Shocker/03 Privesc]]
-- [ ]  Hack the box (Mirai)
-- [ ]  Hack the box (Blocky)
+- [x]  Hack the box (Mirai)
+- [x]  Hack the box (Blocky)
 - [ ]  Hack the box (Bank)
-- [ ]  Hack the box (Poison)
+- [x]  Hack the box (Poison)
 - [ ]  Hack the box (BrainFuck*)
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/CronOS/01 Exploit]]
-- [ ]  Hack the box (Solid State)
+- [x]  Hack the box (Solid State)
 - [ ]  Hack the box (Tenten)
 - [ ]  Hack the box (Shrek)
 - [ ]  Hack the box (Friendzone)
 - [ ]  Hack the box (SecNotes)
-- [ ]  Hack the box (node)
+- [x]  Hack the box (node)
 - [ ]  Hack the box (Mango)
 - [ ]   Hack the box (Safe) 
 - [x]    Hack the box [[00 Progress/Boxes/HTB/Linux/Open Admin/00 Enum]]
-- [ ]  Hack the box [[mrRobot.pdf]]
+- [x]  Hack the box [[mrRobot.pdf]]

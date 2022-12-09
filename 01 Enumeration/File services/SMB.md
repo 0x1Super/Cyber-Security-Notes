@@ -1,26 +1,54 @@
+
+![[Pasted image 20221208053454.png]]
+
+
 # enumerating SMB 
 ```bash
+
+# smbclient
 smbclient -L //$IP/ ##to check for directories without logging in 
 smbclient //$IP/Directory # login without auth
+echo exit | smbclient -L \\\\[ip]
+smbclient \\\\[ip]\\[share name]
+
+# Others
 
 Enumerate Hostname : nmblookup -A [ip] 
 
--U # Username
-```
-## flags
-```bash
-smbmap -H [ip/hostname]
-echo exit | smbclient -L \\\\[ip]
-nmap --script smb-enum-shares -p 139,445 [ip]
-# Check Null Sessions
-smbmap -H [ip/hostname]
-smbclient \\\\[ip]\\[share name]
+nmap --script smb-enum-shares -p 139,445 [ip] # Or smbb-enum-users
+
 nmap --script smb-vuln* -p 139,445 [ip] # Check for Vulnerabilities - 
+
+nmap --script smb-protocols -p 139,445 [ip] # Check for Vulnerabilities - 
+
+smbmap -H [ip/hostname]
+
+smbmap -u guest -p "" -d . -H IP
+
+smbmap -H [ip/hostname]
+
 Overall Scan - enum4linux -a [ip] 
+
 smbver.sh [IP] (port) [Samba] # Manual Inspection
+
+rpccclient -U "" -N IP
+# Inside rpc
+srvinfo # check info about target
+enumdomusers # check users
+lookupnames NAME # check for user 
+enumdomgroups
+
+# Metasploit
+use auxiliary/scanner/smb/smb2
+use auxiliary/scanner/smb/smb_version
+use auxiliary/scanner/smb/smb_enumshares
+use auxiliary/scanner/smb/pipe_auditor # pipe search
+
+-U # Username
 -N #Force to not use password aka NULL session attack
 get flag_1 - # read file
 ```
+	
 
 # Nbtstat ( Windows )
 ![[Pasted image 20221123163002.png]]
@@ -83,8 +111,7 @@ mget *
 
 ```bash
 # Metasploit
-smb_login
-
+use axuilary/scanner/smbb/smb_login # bruteforce 
 ```
 
 # Check for shares permissions

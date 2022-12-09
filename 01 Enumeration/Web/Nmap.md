@@ -5,6 +5,16 @@ autorecon 10.10.10.3
 
 autorecon -t targets.txt
 
+
+# Nmap xsl
+
+
+```bash
+nmap -sC -sV -oA scan --stylesheet nmap-bootstrap.xsl IP 
+xsltproc -o scanme.html nmap-bootstrap.xsl scanme.xml
+
+```
+
 ## Initial scan TCP
 
 nmap -sC -sV -O -oA nmap/initial 10.10.10.3

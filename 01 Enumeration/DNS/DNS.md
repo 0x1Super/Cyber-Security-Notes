@@ -1,1 +1,0 @@
-https://securitytrails.com/blog/dns-enumeration

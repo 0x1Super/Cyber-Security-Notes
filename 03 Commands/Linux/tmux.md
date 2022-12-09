@@ -35,7 +35,8 @@ unbind '"'
 unbind %
 ```
 -------------------------------------------------------
-- `usage`
+```
+# usage
 ctrl + b to type commands
 
 tmux new -s name
@@ -44,11 +45,13 @@ tmux new -s name
 arrow keys to move between panels 
 c new window 
 numbers to  change windows 
-CTRL + [ copy mode]
+prefix + [ # read mode 
+
+# Read mode 
 ? find up
 / find down
-space copy mode and select enter 
-CTRL ] past 
+space # select mode then enter 
+CTRL ] past # paste selected into vim 
 
 CTRL + ALT +SHIFT + P to log my session
 CTRL + hold CTRL and arrows to resize 
@@ -58,3 +61,11 @@ Alt . last word typed
 CTRL + V visual block mode
 G copy whole colum 
 v delete 
+```
+
+# Commands
+```bash
+tmux kill-session # kill sessions
+CTRL + d # detach session 
+tmux attach 
+```

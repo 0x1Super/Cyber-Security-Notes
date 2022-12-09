@@ -8,3 +8,10 @@ ftp $IP username anonymous password NULL
 
 wget -r ftp://user:pass@server.com/
 ```
+
+
+```bash
+# Bruteforce with nmap 
+--script ftp-brute --script-args -userdb=USERS_FILE -p 21
+
+```

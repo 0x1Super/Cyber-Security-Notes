@@ -4,7 +4,7 @@ found a cloudme service running on the server
 checking serachsploit for cloudme and we found a [BOF] script 
 changing the payload in the script and adding my own msfvenom
 ![[Pasted image 20211007231319.png]]
-script to get a shell back using [[Chisel]] to tunnel the service to my machine because windows machine doesn't have python so i cant run the script on the server 
+script to get a shell back using [[03 Commands/Linux/Pivoting]] to tunnel the service to my machine because windows machine doesn't have python so i cant run the script on the server 
 ![[Pasted image 20211007231336.png]]
 ![[Pasted image 20211007231353.png]]
 and we are root!
