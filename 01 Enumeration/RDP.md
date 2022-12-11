@@ -16,6 +16,10 @@ search rdp_scanner # Check for rdp service running on a port
 ```
 
 
+# Brute force
+
+[Hydra](Hydra) 
+
 # CVE-2019-0708 BlueKeep
 
 ## Metasploit

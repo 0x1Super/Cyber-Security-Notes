@@ -45,8 +45,11 @@ crackmapexec <protocol> <target(s)> -u ~/file_containing_usernames -H ~/file_con
 # Metasploit
 
 ```ruby
+use auxiliary/scanner/winrm/winrm_login # bruteforce
 
-search winrm_script
+use exploit/windows/winrm/winrm_script_exec # login 
 
 set force_vbs true
+
+
 ```

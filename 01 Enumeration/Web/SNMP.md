@@ -1,3 +1,17 @@
+# snmp
+
+```bash
+sudo apt install snmp-mibs-downloader
+
+sudo vi /etc/snmp/snmp.conf  # comment MIBS
+
+snmpwalk -c public -v2c $ip 
+
+```
+
+
+
+
 ## Enumerate Community strings
 
 ```
@@ -26,9 +40,10 @@ nmap -n -vv -sV -sU -Pn -p 161,162 –script=snmp-processes,snmp-netstat IP
 ## snmpwalk 
 
 
-apt install snmp-mibs-downloader # translates MIBs into readable format
+
 
 ```
+apt install snmp-mibs-downloader # translates MIBs into readable format
 for community in public private manager; do snmpwalk -c $community -v1 $ip; done
 
 snmpwalk -c public -v1 $ip

@@ -200,3 +200,30 @@ browsh --startup-url IP
 lynx IP
 
 ```
+
+
+# arpspoof
+
+```bash
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+arpspoof -i eth1 -t TARGET_IP -r TARGET_IP2
+
+```
+
+# Metasploit 
+
+
+```rb
+
+-   post/linux/gather/enum_configs # check for config files
+-   post/multi/gather/env # check env 
+-   post/linux/gather/enum_network # network info - ssh etc. 
+-   post/linux/gather/enum_protections # checks for system hardening techs
+-   post/linux/gather/enum_system # enum system packages etc.
+-   post/linux/gather/checkcontainer
+-   post/linux/gather/checkvm
+-   post/linux/gather/enum_users_history
+-   post/multi/manage/system_session
+-   post/linux/manage/download_exec
+```

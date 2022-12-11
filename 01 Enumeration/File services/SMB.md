@@ -11,6 +11,12 @@ smbclient //$IP/Directory # login without auth
 echo exit | smbclient -L \\\\[ip]
 smbclient \\\\[ip]\\[share name]
 
+# flags
+-L list
+-U user
+
+
+
 # Others
 
 Enumerate Hostname : nmblookup -A [ip] 
@@ -24,6 +30,7 @@ nmap --script smb-protocols -p 139,445 [ip] # Check for Vulnerabilities -
 smbmap -H [ip/hostname]
 
 smbmap -u guest -p "" -d . -H IP
+
 
 smbmap -H [ip/hostname]
 
@@ -131,4 +138,19 @@ enum4linux -U <IP> # enum users
 -l # ldap
 -a # ALL 
 
+```
+
+
+# Metasploit
+
+```ruby
+
+use auxiliary/scanner/smb/smb_version # check version
+
+use auxiliary/scanner/smb/smb_enumusers # enumurate users 
+
+use auxiliary/scanner/smb/smb_shares # enumurate shares 
+set sharefiles true
+
+use auxiliary/scanner/smb/smb_login # bruteforce login 
 ```

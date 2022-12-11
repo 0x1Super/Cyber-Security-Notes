@@ -39,4 +39,4 @@ vnc can use password files so prob the secret file we found earlier is vnc passw
 ![[Pasted image 20221129214052.png]]
 and we are root
 decrypt vnc password
-https://github.com/jeroennijhof/vncpwd
+[vncpwd](https://github.com/jeroennijhof/vncpwd) 
