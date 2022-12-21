@@ -1,2 +1,0 @@
-sslyze IP PORT
-sslyze 

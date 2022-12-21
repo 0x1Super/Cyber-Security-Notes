@@ -1,3 +1,0 @@
-- #python module manipulation 
-- #PATH poisoning 
-- #perl capabilities

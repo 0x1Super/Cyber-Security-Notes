@@ -1,6 +1,0 @@
-- Wordpress was #vul to brute force attack and using default username creds 
-- Wordpress was #vul to uploading a reverse shell to the website and executing it 
-- Jenkins was #vul to brute force attack and using default username 
-- Jenkins was #vul to Reverse shell on script tab 
-- leaving root creds on the machine 
-- how to use OWASP Zap

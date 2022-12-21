@@ -1,1 +1,0 @@
-kerbrute userenum -d DOMAIN.local --dc DOMAIN_IP USERNAMES.txt 

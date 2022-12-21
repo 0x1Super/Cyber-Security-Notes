@@ -1,4 +1,0 @@
-- the server had an open directory that had a id_rsa ssh key to a user in the server
-- the server was vulnerable heartbleed exploit which lead to reading from memory the password for the ssh key user hype that we found earlier
-- the kernel version of the target was so out dated that it was vulnerable to most common exploits like dirty cow which lead to priv escalation 
-- the root had an open tmux session that the user hyper could connect to which lead to priv escalation 

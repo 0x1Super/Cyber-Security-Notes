@@ -4,92 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "39a60993331642de",
+        "id": "c448168ae991a168",
         "type": "tabs",
         "children": [
           {
-            "id": "eda48075a60851e4",
+            "id": "0c39805dc3f9a085",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "99 Resources/Attach/Pasted image 20210918091509.png"
-              }
-            }
-          },
-          {
-            "id": "490476d615b7b582",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Exploitation/Metasploit.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6e84bd4ee2578903",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PNPT/WEB/OWASP/SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0e9874a57f255fac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Exploitation/Privesc/Linux.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3062272880216dc9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Enumeration/Check list.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "44e6ce88882b02e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Exploitation/Upgrading Shell.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9bd0f5ecaef9aab0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PNPT/AD/Post-Compromise Enum-attacks/Tools.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -118,7 +45,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "metas",
+                "query": "mount -t",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -155,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "99 Resources/Attach/Pasted image 20210918091509.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,21 +98,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "99 Resources/Attach/Pasted image 20210918091509.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "3d67e9af631c1df1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 Progress/To do/Daily.md",
-                "mode": "source",
-                "source": false
               }
             }
           },
@@ -202,58 +115,32 @@
             }
           },
           {
-            "id": "f0166f5888f6d3e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 Enumeration/Check list.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "721d80bb9ecde076",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 Progress/To do/Daily.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0a8fb1ee6aacfb8d",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "99 Resources/Attach/Pasted image 20210918091509.png"
-              }
+              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 347.5,
     "collapsed": true
   },
-  "active": "eda48075a60851e4",
+  "active": "d713afe9e1ebeb45",
   "lastOpenFiles": [
-    "99 Resources/Attach/bandit 1.md",
-    "99 Resources/Templates/HackTheBox Temp.md",
-    "99 Resources/Useful links/Links.md",
-    "99 Resources/Useful links/boxes.md",
-    "99 Resources/Templates/TryHackMe Temp.md",
-    "99 Resources/Templates/Main note.md",
-    "99 Resources/Templates/Boxes Temp.md",
-    "04 Studies/Tools/WireShark.md",
-    "04 Studies/Tools/sslyze.md",
-    "04 Studies/Tools/Nmap.md"
+    "01 Enumeration/Ports/21 FTP/VSFTPD.md",
+    "00 Progress/Boxes/HTB/Linux/CronOS/03 Privesc.md",
+    "01 Enumeration/Ports/21 FTP/ProFTPD.md",
+    "01 Enumeration/Ports/2049 NFS.md",
+    "00 Progress/Boxes/HTB/Linux/CronOS/05 Conclusion.md",
+    "00 Progress/Boxes/HTB/Linux/Open Admin/03 Privesc.md",
+    "00 Progress/Boxes/HTB/Linux/Open Admin/01 Foothold.md",
+    "00 Progress/Boxes/HTB/Linux/Open Admin/00 Enum.md",
+    "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
+    "00 Progress/To do/OSCP Windows.md"
   ]
 }

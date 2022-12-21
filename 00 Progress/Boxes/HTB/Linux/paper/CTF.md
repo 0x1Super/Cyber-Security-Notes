@@ -68,7 +68,8 @@ inside ../hubot
 looks like it's a git repo
 and .env probably has interesting info 
 ![[Pasted image 20221126204818.png]]
-
+or
+inside /proc/self/enviorn 
 # 3. privesc
 dwight:Queenofblad3s!23
 trying password we got with the user dwight cos we already know he exists and it works!

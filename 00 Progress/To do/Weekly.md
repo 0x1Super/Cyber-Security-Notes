@@ -1,7 +1,0 @@
-- [ ] Sat         **Solving machines all day**
-- [ ] Sun        **Videos/Books **
-- [ ] Mon       **Solving machines all day**
-- [ ] Tuse       **Videos/Books **
-- [ ] wed       **Solving machines all day**
-- [ ] Thur       **FREE DAY**
-- [ ] Friday     **Videos/Books**

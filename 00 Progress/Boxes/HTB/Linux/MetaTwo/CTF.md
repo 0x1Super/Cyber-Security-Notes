@@ -12,7 +12,7 @@ adding the domain to our hosts files
 ![[Pasted image 20221116171624.png]]
 running gobuster
 ![[Pasted image 20221116171752.png]]
-looks like website is running on [[WordPress]]
+looks like website is running on [[01 Enumeration/Web/WordPress]]
 ![[Pasted image 20221116171927.png]]
 Running wpscan
 Found user admin and manager

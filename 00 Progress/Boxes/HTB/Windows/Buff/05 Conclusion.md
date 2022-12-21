@@ -1,2 +1,0 @@
-- using a vul gym management server which lead to a webshell and reverse shell using a known CVE 
-- using outdated cloudme service which lead to privesc with known CVE
