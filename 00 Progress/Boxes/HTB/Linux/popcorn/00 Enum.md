@@ -36,5 +36,5 @@ Copyright (c) 2006 Hardened-PHP Project
 
 - /torrent 
 we found login page for a torrent hoster service 
-there is a [[CVEs]] for upload for torrent hoster
+there is a [[Shellshock]] for upload for torrent hoster
 [[00 Progress/Boxes/HTB/Linux/popcorn/01 Exploit]]

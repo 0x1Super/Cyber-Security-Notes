@@ -1,7 +1,7 @@
 # SMB Relay 
 instead of cracking the target hashes we captured with responder we can instead relay the hashes to specific machines and potentially gain access
 ## Requirements 
-- SMB signing disabled on the target
+- SMB signing disabled on the target or enabled but not required 
 - Relayed user creds must be admin on the machine
 - we can't send hashes from a machine to a same machine it must be admin on other machine
 
@@ -19,5 +19,11 @@ instead of cracking the target hashes we captured with responder we can instead 
     - Con: Enforcing the policy may be difficult 
 
 - Local admin restriction
-	- Pro: Can prevent a lot of lateral movment
+	- Pro: Can prevent a lot of lateral movement
 	- Con: Potential increase in the amount of service desk tickets 
+
+
+# Example
+
+
+![[PNPT/AD/Attacking AD/Tools#SMB Relay]]

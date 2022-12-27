@@ -8,14 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0c39805dc3f9a085",
+            "id": "1f3b0d84aa9b66ec",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "02 Exploitation/Impackets/GetNPUser.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eeea81693e65fdf1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PNPT/AD/Post-Compromise Enum-attacks/GPP attacks.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -45,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mount -t",
+                "query": "hashcat",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -66,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 274.5
   },
   "right": {
     "id": "1d9f05574aafd390",
@@ -82,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "PNPT/AD/Post-Compromise Enum-attacks/GPP attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "PNPT/AD/Post-Compromise Enum-attacks/GPP attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +138,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "PNPT/AD/Post-Compromise Enum-attacks/GPP attacks.md"
+              }
             }
           }
         ],
@@ -127,20 +148,30 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
+    "width": 269.5,
     "collapsed": true
   },
-  "active": "d713afe9e1ebeb45",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "eeea81693e65fdf1",
   "lastOpenFiles": [
-    "01 Enumeration/Ports/21 FTP/VSFTPD.md",
-    "00 Progress/Boxes/HTB/Linux/CronOS/03 Privesc.md",
-    "01 Enumeration/Ports/21 FTP/ProFTPD.md",
-    "01 Enumeration/Ports/2049 NFS.md",
-    "00 Progress/Boxes/HTB/Linux/CronOS/05 Conclusion.md",
-    "00 Progress/Boxes/HTB/Linux/Open Admin/03 Privesc.md",
-    "00 Progress/Boxes/HTB/Linux/Open Admin/01 Foothold.md",
-    "00 Progress/Boxes/HTB/Linux/Open Admin/00 Enum.md",
-    "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
-    "00 Progress/To do/OSCP Windows.md"
+    "02 Exploitation/BruteForce/Crypto/Hashcat.md",
+    "02 Exploitation/Impackets/GetUsersSPNs.md",
+    "02 Exploitation/Impackets/GetNPUser.md",
+    "PNPT/AD/Post-Compromise Enum-attacks/Kerberos/Kerberoasting.md",
+    "PNPT/AD/Post-Compromise Enum-attacks/Kerberos/Golden Ticket.md",
+    "02 Exploitation/Privesc/Windows.md",
+    "02 Exploitation/Screen_shots/Pasted image 20211206190118.png",
+    "02 Exploitation/Privesc/Linux.md",
+    "02 Exploitation/ReverseShells/Reverse Shells.md",
+    "01 Enumeration/Ports/80 443 http_https/Windows IIS.md"
   ]
 }

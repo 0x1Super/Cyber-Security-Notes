@@ -11,3 +11,17 @@ Hard to completely prevent, but we can make it more difficult on an attacker:
 	- Check out/in sensitive accounts when needed 
 	- Automatically rotate passwords on check out and check in 
 	- Limits pass attacks as hash/password is strong and constantly rotated 
+
+# Examples
+- Pass the hash doesn't work with NTLMv2 
+- Second part of the hash is the one that can be passed
+
+## cme
+![[Crackmapexec]]
+
+## psexec
+![[psexec]]
+
+
+---
+Tags: #passhash 

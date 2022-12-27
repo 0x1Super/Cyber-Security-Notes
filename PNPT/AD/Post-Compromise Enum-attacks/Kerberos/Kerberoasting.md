@@ -7,11 +7,12 @@
 5. Present TGS for service enc w/ server's account
 6. Used when mutual authentication is required.
 
-so if we have a user cred in the domain we can capture TGS with server's account
-We can then try to crack the *sever hash that we got in step 4*
+**so if we have a user cred in the domain we can capture TGS with server's account
+We can then try to crack the sever hash that we got in step 4**
 
 hashcat -m 13100
 # Mitigation
 
 - Strong Passwords
 - Least privilege 
+

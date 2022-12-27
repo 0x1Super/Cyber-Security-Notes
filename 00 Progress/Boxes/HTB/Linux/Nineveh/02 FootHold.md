@@ -2,7 +2,7 @@
 on the first admin page 
 ![[Pasted image 20210930190747.png]]
 url looks like LFI vul so tried some methods didn't work 
-on 2nd admin page phpliteadmin we found a #CVE for it [[CVEs]]
+on 2nd admin page phpliteadmin we found a #CVE for it [[Shellshock]]
 let's first create a database and call it the same as the txt file we found on the http admin web page  
 but with .php extension and we put the code 
 ```

@@ -5,4 +5,12 @@ Overview:
  - Patched in Ms14-025, but doesn't prevent previous uses
  - Groups.xml in SYSVOL
 
-Invoke-GPP or msfconsole 
+Invoke-GPP 
+
+or 
+
+# msfconsole 
+
+```
+smb_enum_gpp
+```

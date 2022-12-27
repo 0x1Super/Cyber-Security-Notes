@@ -1,0 +1,7 @@
+@media print { 
+    .print .markdown-preview-view { 
+        -webkit-print-color-adjust: exact; 
+        background-color: #202020; 
+        color: #dcddde;
+    }
+}

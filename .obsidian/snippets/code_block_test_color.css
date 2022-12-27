@@ -1,0 +1,16 @@
+.app-container .markdown-preview-view pre.language-fs12, 
+.app-container .markdown-preview-view pre.language-fs12 code.language-fs12, 
+.app-container .markdown-source-view pre.language-fs12 code.language-fs12,
+.fs12 {
+   font-size: 12px;
+}
+.app-container .markdown-preview-view .fs12 {
+   font-size: 12px;
+}
+.app-container .markdown-preview-view pre[class*="language-fs"] code[class*="language-fs"] {
+  color: var(--text-normal);
+  white-space: pre-wrap;
+  font-family: var(--default-font);
+  padding: 0;
+  background:none;
+}

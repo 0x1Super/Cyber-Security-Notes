@@ -17,7 +17,7 @@ there is a file is created every min probably by cronjob
 checking the files and it's a 
 chkrootkit 
 which checks for system vul every min 
-looking for vuln with searchsploit we find one [[CVEs]]
+looking for vuln with searchsploit we find one [[Shellshock]]
 creating the /tmp/update file and putting reverse shell inside and we just wait a min to see if it will work 
 
 ![[Pasted image 20210930205900.png]]

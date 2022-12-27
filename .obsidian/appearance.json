@@ -1,5 +1,11 @@
 {
-  "accentColor": "",
+  "accentColor": "#6aa7c8",
   "cssTheme": "Dark Moss",
-  "baseFontSize": 14
+  "baseFontSize": 14,
+  "enabledCssSnippets": [
+    "background_color"
+  ],
+  "textFontFamily": "Inter,Artifex CF",
+  "monospaceFontFamily": "Inter",
+  "theme": "obsidian"
 }

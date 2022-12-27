@@ -1,4 +1,4 @@
-o checking the [[CVEs]]again to see how to exploit the server
+o checking the [[Shellshock]]again to see how to exploit the server
 and upload pentest monkey php reverse shell through my image plugin
 uploading the shell with the name image.php 
 then we start a listener then we go to 
