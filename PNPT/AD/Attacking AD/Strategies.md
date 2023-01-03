@@ -6,4 +6,7 @@
 	- Printers
 	- Jenkins
 	- Etc.
-Think outside the box
+- Think outside the box
+
+---
+Tags: #checklist 

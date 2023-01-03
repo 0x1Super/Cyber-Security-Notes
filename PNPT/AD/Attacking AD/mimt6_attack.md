@@ -31,3 +31,4 @@ We can relay this NTLM authentication to LDAP (unless mitigations are applied) w
 
 ---
 Tags: #ipv6 #AD #MITM #responder #mimt6
+Resources: [blog](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/)

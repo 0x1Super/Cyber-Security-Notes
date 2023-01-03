@@ -2,7 +2,7 @@
 ***
 ```
 route print
-apr -a 
+arp -a 
 ipconfig (win)
 ifconfig(win)
 

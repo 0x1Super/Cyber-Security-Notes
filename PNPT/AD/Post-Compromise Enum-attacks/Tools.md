@@ -99,16 +99,22 @@ Invoke-adPEAS -Domain contoso.com -Username 'contoso\johndoe' -Password 'Passw0r
 
 
 
-# In msfconsole 
 
 
-## gpp / cPassword attack
+# check for gpp / cPassword attack
 
-- Check for gpp attack
+
+## invoke-gpp
+
+[Invoke-gpp](https://github.com/vysecurity/ps1-toolkit/blob/master/Invoke-GPPPassword.ps1)
+
+
+## Metasploit
 ```
 smb_enum_gpp moudle 
 ```
 
-
-# gpp-decrypt
+## gpp-decrypt
+```bash
 gpp-decrypt <HASH>
+```

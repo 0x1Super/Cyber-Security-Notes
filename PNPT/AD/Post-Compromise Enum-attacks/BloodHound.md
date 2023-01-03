@@ -60,5 +60,30 @@ Invoke-bloodhound -Collectionmethod All -Domain marvel.local -ZipFileName file.z
 
 ```
 
+
+# Examples
+
+## Search Users DCSync Rights  
+
+
+![[Pasted image 20221230121414.png]]
+
+
+## Search Users AS-REP Roastable Users (DontReqPreAuth)  
+
+![[Pasted image 20221230121434.png]]
+
+
+## Search Unconstrained Delegation
+
+![[Pasted image 20221230121453.png]]
+
+## Search Shortest Paths to Domain Admins 
+![[Pasted image 20221230121508.png]]
+
+
 ---
 Tags: #AD #bloodhound #sharphound
+Resources: 
+[SharpCollection_repo](https://github.com/Flangvik/SharpCollection)
+[BloodHound](https://github.com/BloodHoundAD/BloodHound)

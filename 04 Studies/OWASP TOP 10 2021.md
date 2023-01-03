@@ -118,3 +118,25 @@ Insecure design is a broad category representing different weaknesses, expressed
 -   Segregate tenants robustly by design throughout all tiers
     
 -   Limit resource consumption by user or service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+Tags: #OWASP #OWASP_checklist
+Resources: 
+[OWASP top 10](https://owasp.org/www-project-top-ten/)
+[Checklist](https://github.com/tanprathan/OWASP-Testing-Checklist)
+[Checklist pdf](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Testing_Guide_v4.pdf)
+[OWASP top 10 pdf](https://owasp.org/www-chapter-minneapolis-st-paul/download/20211216_OWASP-MSP_OWASP_Top_Ten_2021.pdf?raw=true) 
