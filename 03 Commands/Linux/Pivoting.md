@@ -19,6 +19,13 @@ ssh -D 1080 -L6801:127.0.0.1:5801 -L6901:127.0.0.1:5901 charix@poison.htbb
 
 ```
 
+## Inside ssh connection
+
+```
+~C
+-L 4873:localhost:4873 # port forward localhost port 4873 to my machine at port 4873 
+```
+
 # Proxy chains
 First we add our local host and wanted port into /etc/proxychains.conf
 ```bash

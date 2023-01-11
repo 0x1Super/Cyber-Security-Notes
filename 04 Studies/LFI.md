@@ -123,7 +123,7 @@ http://134.209.184.216:30489/index.php?language=zip://malicious.zip%23exec.php&c
 
 ## Also in windows
 If "allow_url_include" wrapper is set to "Off" by default, indicating that PHP does not load remote HTTP or FTP URLs to prevent remote file inclusion attacks
-however php doesn't prevent smb connection so what the attacker can do is host a smb server with [[PNPT/AD/Post-Compromise Enum-attacks/Tools]] and because how windows works with smb 
+however php doesn't prevent smb connection so what the attacker can do is host a smb server with [[TCM-Security/AD/Post-Compromise Enum-attacks/Tools]] and because how windows works with smb 
 NTLM is a collection of authentication protocols created by Microsoft
 The NTLM authentication process is done in the following way :
 1. The client sends the user name and domain name to the server.

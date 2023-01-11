@@ -43,7 +43,7 @@
 -   Buffer Overflow Attacks: Detect, Exploit, Prevent by Hames C. Foster et al.
     
 -   Inside the Buffer Overflow Attack: Mechanism, Method and Prevention by Mark Donaldson
-
+^ss
 ---
 Tags:
 Resources:

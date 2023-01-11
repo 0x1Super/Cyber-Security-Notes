@@ -37,6 +37,7 @@ E # Error based
 --data # Login info
 --flush-session # delete saved info about old tests
 --batch # never ask for user input and use defaults
+--threads 10 # quckier scan
 ```
 
 # Flags after finding injectable parameter

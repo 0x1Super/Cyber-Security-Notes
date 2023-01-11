@@ -8,6 +8,8 @@ dig axfr zonetransfer.me @nsztm1.digi.ninja.
 
 # dig
 ```bash
+
+dig axfr @192.168.170.148 # zone transfer
 dig ANY @<DNS_IP> <DOMAIN>     #Any information
 dig A @<DNS_IP> <DOMAIN>       #Regular DNS request
 dig AAAA @<DNS_IP> <DOMAIN>    #IPv6 DNS request

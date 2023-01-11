@@ -7,9 +7,9 @@ When: [[2021-09-21]]
 - [ ]  Hack the box (Omni)
 - [ ]  Hack the box (Servmon)
 - [ ]  Hack the box [[00 Progress/Boxes/HTB/Windows/Buff/01 Exploit]]
-- [ ]  Hack the box (SecNotes)
+- [x]  Hack the box [[SecNotes]]
 - [ ]  Hack the box (BankRobber)
-- [ ]  Hack the box (chatterbox)
+- [ ]  Hack the box [[ChatterBox]]
 - [ ]  Hack the box (forest)
 - [ ]  Hack the box (Conceal)
 - [ ]  Hack the box (Bounty)

@@ -1,61 +1,16 @@
 # Enumeration 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Exploitation 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## open ports
 
 # Foothold 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 # Privesc 
-# Conclusion
+# Loot
 
 
 
-
-----------------------------------------------------------------------------------
+---
+Tags:
+Resources: 

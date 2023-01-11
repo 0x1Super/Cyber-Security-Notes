@@ -1,6 +1,4 @@
-Tags:OSCP Linux 
-When: [[OSCP Linux]]
-
+# HTB
 #todo Do List
 - [ ]  Hack the box (tartarsauce)
 - [ ]  Hack the box (jarvis)
@@ -40,3 +38,25 @@ When: [[OSCP Linux]]
 - [ ]   Hack the box (Safe) 
 - [x]    Hack the box [[00 Progress/Boxes/HTB/Linux/Open Admin/00 Enum]]
 - [x]  Hack the box [[mrRobot.pdf]]
+- [ ] [[SoSimple]]
+- [x] [[Stapler]]
+- [ ] SO SIMPLE: 1
+- [ ] TRE: 1 (Although Idk If I would do the priv esc in a real world scenario ¯\_(ツ)_/¯ )
+- [ ] [[Sunset Midnight]]
+- [ ] InfosecPrep
+- [ ] Seppuku
+- [ ] DC-1
+- [x] [[DC-2]]
+- [ ] Assertion101
+- [ ] FunboxEasy
+- [ ] FunboxEasyEnum
+- [ ] DriftingBlue6
+- [ ] Djinn3
+- [ ] GLASGOW SMILE: 1.1
+- [ ] PowerGrid 1.0.1
+- [ ] GITROOT: 1
+- [ ] Dawn2
+- [ ] DC-3
+- [ ] DC-4
+- [ ] ICMP
+

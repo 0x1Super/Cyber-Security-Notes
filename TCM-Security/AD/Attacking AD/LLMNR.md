@@ -1,0 +1,1 @@
+![[TCM-Security/Writeups/LLMNR]]

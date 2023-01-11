@@ -81,7 +81,7 @@ grep -A 18 ENCRYPT_METHOD /etc/login.defs
 ```
 eog
 ```
-# Check listening ports
+# Check listening/open ports
 
 ```
 sudo lsof -i -P -n | grep LISTEN  

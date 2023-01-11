@@ -11,7 +11,7 @@ for /L %i in (1,1,255) do @ping -n 1 -w 200 10.86.174.%i > nul && echo 10.86.74.
 [windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits) #Windows_priv_esc
 [WinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS) #Windows_priv_esc
 [Metasploit local priv modules](Metasploit)  #Windows_priv_esc
-[MimiKatz](Mimikatz) #password_dump
+[MimiKatz](Mimikatz.md) #password_dump
  
 ## By passing UAC
 
@@ -25,7 +25,7 @@ for /L %i in (1,1,255) do @ping -n 1 -w 200 10.86.174.%i > nul && echo 10.86.74.
 
 ## Token Impersonation
 
-[Token Impersonation](Token_Impersonation)   
+[Token Impersonation](Token_Impersonation.md)   
 
 [Sweet potato](https://github.com/CCob/SweetPotato)
 
@@ -45,8 +45,8 @@ C:\Windows\Panther\Autounattend.xml
 
 ## Powersploit 
 
-[Powersploit (Powerup)](https://github.com/PowerShellMafia/PowerSploit)
-
+[Powersploit](https://github.com/PowerShellMafia/PowerSploit)
+Invoke-AllChecks
 
 ## Pass the hash
 
@@ -78,9 +78,6 @@ OR
 mklink wupdate.exe PATH_OF_THE_FILE:PAYLOAD.exe
 wupdate.exe # Will start PAYLOAD.exe
 
-
-
-
 ```
 
 # System useful commands
@@ -99,7 +96,16 @@ schtasks#  check running tasks cmd
 systeminfo
 
 New-MachineAccount -MachineAccount FAKE01 -Password $(ConvertTo-SecureString '123456' -AsPlainText -Force) -Verbose # create user inside of a domain
+
 ```
+
+###
+
+Check file perm
+
+`Get-ACL <file> | Fl * `
+
+
 ## CMD
 
 
@@ -192,7 +198,7 @@ use exploit/windows/local/bypassuac_injection
 
 # Maintain access 
 
-[MimiKatz](Mimikatz) 
+[MimiKatz](Mimikatz.md) 
 
 
 

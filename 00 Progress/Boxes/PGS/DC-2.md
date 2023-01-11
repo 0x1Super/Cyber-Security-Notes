@@ -16,4 +16,6 @@ wordpress
 
 
 ---
-Tags: #wordpress #cewl #custom_pw 
+Tags: #wordpress #cewl #custom_pw #DC-2 #proving_grounds 
+Resources:
+[Proving Grounds](https://portal.offensive-security.com/labs/play) 

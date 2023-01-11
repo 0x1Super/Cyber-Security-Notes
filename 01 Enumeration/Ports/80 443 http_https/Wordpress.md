@@ -8,6 +8,10 @@ wpscan --url [URL] -U admin -P wordlist # bruteforce
 
 
 wp-content-dir wp-content --plugins-detection aggressive # plugins enum if first didn't work
+
+--disable-tls-checks # for TLS
+--password-attack wp-login # bruteforce type wp-login
+
 ```
 
 
