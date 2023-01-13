@@ -1,7 +1,7 @@
-Tags:OSCP Linux 
-When: [[2021-09-21]]
-
-#todo Do List
+Tags: #OSCP_Windows #todo 
+- [x]  Hack the box [[Love]]
+- [x]   Hack the box [[Access]]
+- [x]  Hack the box [[Jeeves]]
 - [ ]  Hack the box (Fuse)
 - [ ]  Hack the box (worker)
 - [ ]  Hack the box (Omni)
@@ -23,7 +23,7 @@ When: [[2021-09-21]]
 - [ ]  Hack the box (Granny)
 - [ ]  Hack the box (Devel)
 - [ ]  Hack the box (Arctic)
-- [ ]  Hack the box (Active)
+- [ ]  Hack the box [[Active]]
 - [ ]  Hack the box (Legacy)
 - [ ]  Hack the box (Sauna)
 - [ ]  Hack the box (Remote)

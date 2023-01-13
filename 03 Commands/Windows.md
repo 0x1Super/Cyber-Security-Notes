@@ -99,11 +99,19 @@ New-MachineAccount -MachineAccount FAKE01 -Password $(ConvertTo-SecureString '12
 
 ```
 
-###
 
-Check file perm
+## Check file perm
 
-`Get-ACL <file> | Fl * `
+```
+Get-ACL <file> | Fl * 
+```
+
+
+## Check Link files
+
+```
+powershell -c "$WScript = New-Object -ComObject WScript.Shell; $SC = Get-ChildItem *.lnk; $WScript.CreateShortcut($sc)"
+```
 
 
 ## CMD

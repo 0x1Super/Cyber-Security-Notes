@@ -69,3 +69,7 @@ tmux kill-session # kill sessions
 CTRL + d # detach session 
 tmux attach 
 ```
+ctr b ctr s
+ctr b ctr r
+ctr b w - choose pane 
+[https://gist.github.com/mttaggart/e33b55646ddd49de9dcdb8afe8beaa7c](https://gist.github.com/mttaggart/e33b55646ddd49de9dcdb8afe8beaa7c)

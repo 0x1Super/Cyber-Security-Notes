@@ -4,16 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "337f9fee21e48a42",
+        "id": "d9250ae168c0e222",
         "type": "tabs",
         "children": [
           {
-            "id": "443247b0b373e45d",
+            "id": "8c58e3d84dd58340",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TCM-Security/Writeups/LLMNR.md",
+                "file": "02 Exploitation/Impackets/GetUsersSPNs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b12e958d745b2e9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Progress/Boxes/HTB/Windows/Active.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c2bc9bb0b60a115f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 Exploitation/Impackets/GetUsersSPNs.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "%",
+                "query": "#kerbero",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -86,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TCM-Security/Writeups/LLMNR.md",
+                "file": "02 Exploitation/Impackets/GetUsersSPNs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TCM-Security/Writeups/LLMNR.md",
+                "file": "02 Exploitation/Impackets/GetUsersSPNs.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TCM-Security/Writeups/LLMNR.md"
+                "file": "02 Exploitation/Impackets/GetUsersSPNs.md"
               }
             }
           },
@@ -173,17 +197,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "443247b0b373e45d",
+  "active": "8c58e3d84dd58340",
   "lastOpenFiles": [
-    "TCM-Security/Web Enum OSINT.md",
-    "Obsidian.md",
-    "Untitled.canvas",
-    "00 Progress/Boxes/HTB/Windows/ChatterBox.md",
-    "03 Commands/Linux/Pivoting.md",
+    "02 Exploitation/Impackets/GetNPUsers.md",
+    "02 Exploitation/Impackets/GetUsersSPNs.md",
+    "00 Progress/Boxes/HTB/Windows/Active.md",
+    "TCM-Security/AD/Post-Compromise Enum-attacks/Tools.md",
+    "00 Progress/To do/OSCP Windows.md",
+    "TCM-Security/AD/Post-Compromise Enum-attacks/GPP_attack.md",
     "01 Enumeration/Ports/SMB 443,139.md",
-    "TCM-Security/AD/Pivoting.md",
-    "03 Commands/Windows.md",
+    "00 Progress/Boxes/HTB/Windows/Love.md",
     "TCM-Security/Windows Privilege Escalation/Enumuration.md",
-    "03 Commands/Upload-Download files.md"
+    "00 Progress/Boxes/HTB/Windows/ChatterBox.md"
   ]
 }

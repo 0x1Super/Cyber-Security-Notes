@@ -7,6 +7,7 @@ ftp $IP username anonymous password NULL
 
 
 wget -r ftp://user:pass@server.com/
+wget -m --no-passive ftp://anonymous:anonymous@10.10.10.10
 ```
 
 
