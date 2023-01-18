@@ -8,42 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8c58e3d84dd58340",
+            "id": "0c59a8d557c97c57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Exploitation/Impackets/GetUsersSPNs.md",
+                "file": "03 Commands/Upload-Download files.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b12e958d745b2e9f",
+            "id": "d4498fa3beb3c2ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Windows/Active.md",
+                "file": "TCM-Security/Windows Privilege Escalation/Enumuration.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c2bc9bb0b60a115f",
+            "id": "cd3945f77c10a9b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 Exploitation/Impackets/GetUsersSPNs.md",
+                "file": "00 Progress/Boxes/HTB/Windows/Bastion.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
+        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -73,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#kerbero",
+                "query": "color",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -94,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 203.5
   },
   "right": {
     "id": "1d9f05574aafd390",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 Exploitation/Impackets/GetUsersSPNs.md",
+                "file": "00 Progress/Boxes/HTB/Windows/Bastion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02 Exploitation/Impackets/GetUsersSPNs.md",
+                "file": "00 Progress/Boxes/HTB/Windows/Bastion.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 Exploitation/Impackets/GetUsersSPNs.md"
+                "file": "00 Progress/Boxes/HTB/Windows/Bastion.md"
               }
             }
           },
@@ -197,17 +198,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "8c58e3d84dd58340",
+  "active": "cd3945f77c10a9b9",
   "lastOpenFiles": [
-    "02 Exploitation/Impackets/GetNPUsers.md",
-    "02 Exploitation/Impackets/GetUsersSPNs.md",
-    "00 Progress/Boxes/HTB/Windows/Active.md",
-    "TCM-Security/AD/Post-Compromise Enum-attacks/Tools.md",
-    "00 Progress/To do/OSCP Windows.md",
-    "TCM-Security/AD/Post-Compromise Enum-attacks/GPP_attack.md",
-    "01 Enumeration/Ports/SMB 443,139.md",
-    "00 Progress/Boxes/HTB/Windows/Love.md",
     "TCM-Security/Windows Privilege Escalation/Enumuration.md",
-    "00 Progress/Boxes/HTB/Windows/ChatterBox.md"
+    "03 Commands/Upload-Download files.md",
+    "00 Progress/Boxes/HTB/Windows/Bastion.md",
+    "03 Commands/VIM.md",
+    "Excalidraw/Scripts/Downloaded/Add Link to Existing File and Open.md",
+    "01 Enumeration/Ports/2049 NFS.md",
+    "02 Exploitation/Impackets/Crackmapexec.md",
+    "02 Exploitation/Impackets/psexec.md",
+    "01 Enumeration/Ports/SMB 443,139.md",
+    "00 Progress/Boxes/HTB/Linux/Jarvis.md"
   ]
 }

@@ -52,6 +52,8 @@ and the logs contain everything about the request and their User-Agent  we can u
 
 &cmd=COMMAND
 
+/var/log/apache2/access.log
+
 ```
 this gets executed by the server and we can run our code 
 ![[Pasted image 20210930225753.png]]

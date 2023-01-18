@@ -1,7 +1,7 @@
 # HTB
 #todo Do List
 - [ ]  Hack the box (tartarsauce)
-- [ ]  Hack the box (jarvis)
+- [x]  Hack the box [[Jarvis]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/popcorn/01 Exploit]]
 - [ ]  Hack the box (haircut)
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Nineveh/01 Exploit]]

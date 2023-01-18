@@ -147,4 +147,6 @@ Navigate to settings -> site and scroll down to find the SSH Authentication sett
 
 ![[Pasted image 20221118211558.png]]
 
- 
+ ---
+Tags: #log4j
+Resources:

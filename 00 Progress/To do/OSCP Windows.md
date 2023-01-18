@@ -11,11 +11,10 @@ Tags: #OSCP_Windows #todo
 - [ ]  Hack the box (BankRobber)
 - [ ]  Hack the box [[ChatterBox]]
 - [ ]  Hack the box (forest)
-- [ ]  Hack the box (Conceal)
-- [ ]  Hack the box (Bounty)
+- [x]  Hack the box [[Bounty]]
 - [ ]  Hack the box (Grandpa)
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Windows/Legacy/01 Exploit]]
-- [ ]  Hack the box (Bastion)
+- [ ]  Hack the box [[Bastion]]
 - [ ]  Hack the box (Netmon)
 - [ ]  Hack the box (Jerry)
 - [ ]  Hack the box (Blue)

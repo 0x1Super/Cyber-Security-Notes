@@ -92,7 +92,7 @@ Plug 'scrooloose/nerdtree'
 
 call plug#end()
 ```
-:Pluginstall - install plugins
+:Pluginstall= - install plugins
 :Plugupdate: update plugins
 [vim_plug_manager]([https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug))
 [vim plugins]( [https://vimawesome.com](https://vimawesome.com/))
