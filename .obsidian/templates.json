@@ -1,3 +1,5 @@
 {
-  "folder": "99 Resources/Templates"
+  "folder": "99 Resources/Templates",
+  "dateFormat": "DD-MM-YYYY",
+  "timeFormat": "HH:mm"
 }

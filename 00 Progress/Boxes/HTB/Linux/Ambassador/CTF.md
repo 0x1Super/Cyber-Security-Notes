@@ -107,4 +107,4 @@ We can now access the Consul on our machine and exploit it with metasploit
 setting metasploit options (IP PORT ACL_TOKEN) and we run the exploit 
 ![[Pasted image 20221116032558.png]]
 
-#rootflag baa8fc68e23600a3b994ab3fa151457a
+

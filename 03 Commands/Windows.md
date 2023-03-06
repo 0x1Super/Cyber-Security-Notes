@@ -229,6 +229,8 @@ set username pavan
 set password 123
 
 set session 1
----
+
+
+run persistence -X
 
 ```

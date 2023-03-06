@@ -24,7 +24,7 @@
 FreePBX 2.8.1.4 on 10.129.1.226
 let's enumerate elastix and freepbx more 
 using searchsploit to see if there is any elastix exploits
-and we found a [[LFI]]  [[00 Progress/Boxes/HTB/Linux/Beep/01 Exploit]]
+and we found a [[00 File Disclosure]]  [[00 Progress/Boxes/HTB/Linux/Beep/01 Exploit]]
 
 
 

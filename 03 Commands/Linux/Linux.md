@@ -1,3 +1,9 @@
+
+# Printout all environment variables 
+
+`printenv`
+
+
 # Live checking a file
 
 ```bash
@@ -134,7 +140,7 @@ CTRL + r to search in history
 
 # replace words 
 ```
- '* sed -i -e 's/\r$//' FILE_NAME # *remove all
+sed -i -e 's/\r$//' FILE_NAME # *remove all
 cat file1 file2... | { tr -d '\n'; echo; } > output.txt
  * tr -s '\n' ',' < test # *Replace all newlines
 ```

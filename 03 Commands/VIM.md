@@ -80,7 +80,7 @@ set numbers on
 
 # plugins
 .vimrc 
-[mattaggart_vimrc]([https://gist.github.com/mttaggart/b788e618eddca83a9c033572bfdf3c76](https://gist.github.com/mttaggart/b788e618eddca83a9c033572bfdf3c76))
+[mattaggart_vimrc](https://gist.github.com/mttaggart/b788e618eddca83a9c033572bfdf3c76)
 ```
 set nu 
 set wrap linebreak nolist
@@ -94,5 +94,5 @@ call plug#end()
 ```
 :Pluginstall= - install plugins
 :Plugupdate: update plugins
-[vim_plug_manager]([https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug))
+[vim_plug_manager](https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
 [vim plugins]( [https://vimawesome.com](https://vimawesome.com/))

@@ -4,18 +4,18 @@
 ![[Pasted image 20230104142015.png]]
 
 
-
-```bash
 # start airmon
+```bash
+
 airmon-g check kill
 
 airmon-ng start wlan0
 
 iwconfig
 ```
-
-```
 # search area find target
+```
+
 airodump-ng wlan0mon
 
 airodump-ng -c 6 --bssid 50:C7:8A:00:73 -w capture  wlan0mon

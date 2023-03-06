@@ -37,3 +37,7 @@ port 445 smb(samba)
 found creds.txt in smb directory general
 ![[Pasted image 20211218151056.png]]
 admin:WORKWORKHhallelujah@#                                                                                                                                   
+
+---
+Tags: 
+Resources:

@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d9250ae168c0e222",
+        "id": "1468b4d37ba124a4",
         "type": "tabs",
         "children": [
           {
-            "id": "0c59a8d557c97c57",
+            "id": "273caba968564966",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 Commands/Upload-Download files.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d4498fa3beb3c2ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TCM-Security/Windows Privilege Escalation/Enumuration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cd3945f77c10a9b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 Progress/Boxes/HTB/Windows/Bastion.md",
+                "file": "04 Studies/HTB Academy/File Inclusion/06 Log Poisoning.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2,
         "stacked": true
       }
     ],
@@ -74,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "color",
+                "query": "tag:#gitlab-11",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -95,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 203.5
+    "width": 222.5
   },
   "right": {
     "id": "1d9f05574aafd390",
@@ -111,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Windows/Bastion.md",
+                "file": "04 Studies/HTB Academy/File Inclusion/06 Log Poisoning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Windows/Bastion.md",
+                "file": "04 Studies/HTB Academy/File Inclusion/06 Log Poisoning.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Progress/Boxes/HTB/Windows/Bastion.md"
+                "file": "04 Studies/HTB Academy/File Inclusion/06 Log Poisoning.md"
               }
             }
           },
@@ -180,11 +155,12 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 269.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,17 +174,53 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "cd3945f77c10a9b9",
+  "active": "273caba968564966",
   "lastOpenFiles": [
-    "TCM-Security/Windows Privilege Escalation/Enumuration.md",
+    "04 Studies/HTB Academy/File Inclusion/05 LFI and File Uploads.md",
+    "04 Studies/HTB Academy/File Inclusion/04 Remote File Inclusion.md",
+    "04 Studies/HTB Academy/File Inclusion/03 PHP Wrappers.md",
+    "04 Studies/HTB Academy/File Inclusion/02 PHP Filters.md",
+    "04 Studies/HTB Academy/File Inclusion/01 Basic Bypasses.md",
+    "04 Studies/HTB Academy/File Inclusion/00 File Disclosure.md",
+    "00 Progress/Web/Port Swagger/Access Control.md",
+    "Daily/06-03-2023.md",
+    "Daily/05-03-2023.md",
+    "00 Progress/Boxes/HTB/Linux/Ready.md",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306073236.png",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306071855.png",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306070328.png",
+    "02 Exploitation/Upgrading Shell.md",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306070111.png",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306070059.png",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306065633.png",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306065448.png",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306065149.png",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306065021.png",
+    "00 Progress/Boxes/HTB/Linux/Screen_shots/Pasted image 20230306054838.png",
+    "02 Exploitation/ReverseShells/Reverse Shells.md",
+    "Agile.md",
+    "03 Commands/Linux/Pivoting.md",
+    "TCM-Security/AD/Pivoting.md",
+    "00 Progress/Boxes/HTB/Linux/Ambassador/CTF.md",
+    "04 Studies/HTB Academy/File Inclusion/09 Skills Assessment - File Inclusion.md",
+    "04 Studies/HTB Academy/File Inclusion/08 File Inclousion Prevention.md",
+    "04 Studies/HTB Academy/File Inclusion/06 Log Poisoning.md",
+    "04 Studies/HTB Academy/File Inclusion/cheatsheet-23.md",
+    "04 Studies/HTB Academy/File Inclusion/LFI-RFI Cheat Sheet.md",
+    "04 Studies/HTB Academy/File Inclusion/07 Automated Scanning.md",
+    "03 Commands/Linux/Linux.md",
+    "04 Studies/HTB Academy/File Inclusion/Unconfirmed 238928.crdownload",
+    "04 Studies/HTB Academy/File Inclusion/Untitled",
     "03 Commands/Upload-Download files.md",
-    "00 Progress/Boxes/HTB/Windows/Bastion.md",
-    "03 Commands/VIM.md",
-    "Excalidraw/Scripts/Downloaded/Add Link to Existing File and Open.md",
-    "01 Enumeration/Ports/2049 NFS.md",
-    "02 Exploitation/Impackets/Crackmapexec.md",
-    "02 Exploitation/Impackets/psexec.md",
-    "01 Enumeration/Ports/SMB 443,139.md",
-    "00 Progress/Boxes/HTB/Linux/Jarvis.md"
+    "04 Studies/HTB Academy/Curl.md",
+    "01 Enumeration/Ports/80 443 http_https/Flask.md",
+    "Untitled.canvas",
+    "04 Studies/HTB Academy/File Inclusion/Screen_shots",
+    "04 Studies/HTB Academy/File Inclusion",
+    "04 Studies/HTB Academy",
+    "00 Progress/Boxes/HTB/Windows/Buff/Screen_shots",
+    "00 Progress/pdf_writeups/Blocky_htb_writeup.pdf",
+    "00 Progress/Web/Juice Shop",
+    "00 Progress/Web/Juice Shop/Screen_shots"
   ]
 }

@@ -12,5 +12,5 @@
 
 
 ---
-Tags:
+Tags: #ctf
 Resources: 

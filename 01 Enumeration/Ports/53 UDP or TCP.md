@@ -21,3 +21,6 @@ dig -x 2a00:1450:400c:c06::93 @<DNS_IP> #reverse IPv6 lookup
 
 #Use [-p PORT]  or  -6 (to use ivp6 address of dns)
 ```
+---
+Tags: #DNS #ZoneTransfer 
+Resources:

@@ -1,13 +1,13 @@
 # HTB
 #todo Do List
-- [ ]  Hack the box (tartarsauce)
+- [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/tartarsauce/CTF]]
 - [x]  Hack the box [[Jarvis]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/popcorn/01 Exploit]]
-- [ ]  Hack the box (haircut)
+- [x]  Hack the box [[Bank]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Nineveh/01 Exploit]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Beep/01 Exploit]]
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Lame/00 Enum]]
-- [ ]  Hack the box (Networked)
+- [x]  Hack the box [[Networked]]
 - [ ]  Hack the box (Safe)
 - [ ]  Hack the box ([[00 Progress/Boxes/HTB/Linux/Writeup/00 Enum]])
 - [ ]  Hack the box (Swagshop)
@@ -24,7 +24,7 @@
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/Shocker/03 Privesc]]
 - [x]  Hack the box (Mirai)
 - [x]  Hack the box (Blocky)
-- [ ]  Hack the box (Bank)
+- [x]  Hack the box [[Bank]]
 - [x]  Hack the box (Poison)
 - [ ]  Hack the box (BrainFuck*)
 - [x]  Hack the box [[00 Progress/Boxes/HTB/Linux/CronOS/01 Exploit]]
@@ -48,6 +48,7 @@
 - [ ] DC-1
 - [x] [[DC-2]]
 - [ ] Assertion101
+- [ ] [[Funbox]]
 - [ ] FunboxEasy
 - [ ] FunboxEasyEnum
 - [ ] DriftingBlue6

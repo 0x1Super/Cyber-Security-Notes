@@ -9,5 +9,6 @@
     "margin": "2",
     "downscalePercent": 70
   },
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "root"
 }

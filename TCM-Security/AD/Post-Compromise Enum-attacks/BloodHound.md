@@ -26,7 +26,7 @@ shortest paths to domain admins from owned principals
 
 ## remote bloodhound
 ```
-bloodhound --dns-tcp -ns 10.10.10.10 -d support.htb -u 'ldap' -p 'password' -c all
+bloodhound-python --dns-tcp -ns 10.10.10.10 -d support.htb -u 'ldap' -p 'password' -c all
 
 -ns # ip
 -d # domain
